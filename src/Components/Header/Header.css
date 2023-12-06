@@ -1,6 +1,10 @@
 .main-header {
     display: flex;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(112.1deg, rgb(141, 157, 210) 11.4%, rgb(161, 163, 169) 70.2%);
+    z-index: 1;
 }
 
 h1 {
@@ -10,10 +14,24 @@ h1 {
 
 .headings {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 3em;
-    padding: 1em;
+    margin: 0;
+    color: white;
+    font-weight: bolder;
 }
 
-.headings:hover * {
+.headings>div {
+    padding: 1em;
+    border-bottom: 5px solid transparent;
+}
+
+.headings div:hover {
     cursor: pointer;
+    border-bottom: 5px solid black;
+    overflow: hidden;
+    transition: 0.5s;
+    color: rgb(53, 78, 159);
 }

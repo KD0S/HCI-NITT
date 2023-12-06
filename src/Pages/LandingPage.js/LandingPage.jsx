@@ -2,6 +2,7 @@ import './LandingPage.css'
 
 import { Header } from '../../Components/Header/Header';
 import Carousel from '../../Components/Carousel/Carousel';
+import ContentCard from '../../Components/ContentCard/ContentCard';
 
 
 function LandingPage() {
@@ -11,6 +12,7 @@ function LandingPage() {
       <div id="main-carousel">
         <Carousel></Carousel>
       </div>
+      <ContentCard></ContentCard>
     </div>
   );
 }
