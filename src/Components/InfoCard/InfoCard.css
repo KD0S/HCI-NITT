@@ -1,0 +1,66 @@
+.card-main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 1em;
+   width: 350px;
+   height: 300px;
+   box-shadow: 0 8px 16px 0 rgba(22, 10, 126, 0.2);
+   perspective: none;
+   transition: 0.3s;
+   border-radius: 32px;
+   background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
+}
+
+.card-main:hover {
+   box-shadow: 0 16px 24px 0 rgba(22, 10, 126, 0.2);
+}
+
+.card-main>img {
+   aspect-ratio: auto;
+   width: 150px;
+   border-radius: 50%;
+}
+
+.card-text {
+   width: 100%;
+   color: white;
+   padding: 20px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 8px;
+
+   /* text-align: justify; */
+   border-bottom-left-radius: 32px;
+   border-bottom-right-radius: 32px;
+}
+
+.card-text>h4 {
+   margin: 0px;
+   /* removing default h4 margin */
+   font: 800 1.05rem "Poppins", sans-serif;
+}
+
+.card-text>p {
+   margin: 0px;
+   /* removing default p margin */
+   font: 400 0.9rem "Poppins", sans-serif;
+}
+
+.icon {
+   color: white;
+   font-size: 1.5em;
+   padding: 0.5em;
+}
+
+@media (max-width: 475px) {
+   .card-main {
+      width: 90%;
+   }
+
+   .card-text>p {
+      font: 400 0.8rem "Poppins", sans-serif;
+   }
+}

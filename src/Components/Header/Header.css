@@ -3,13 +3,14 @@
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    background: linear-gradient(112.1deg, rgb(141, 157, 210) 11.4%, rgb(161, 163, 169) 70.2%);
+    background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
     z-index: 1;
 }
 
 h1 {
     margin: 0;
     padding: 0.2em;
+    color: white;
 }
 
 .headings {
@@ -31,7 +32,6 @@ h1 {
 .headings div:hover {
     cursor: pointer;
     border-bottom: 5px solid black;
-    overflow: hidden;
     transition: 0.5s;
-    color: rgb(53, 78, 159);
+    color: rgb(115, 132, 185);
 }

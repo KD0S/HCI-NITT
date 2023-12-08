@@ -8,10 +8,15 @@
 .card {
     padding: 1em;
     width: 60vw;
+    border-bottom: solid 2px rgb(32, 38, 57);
 }
 
 .card>h2 {
     background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
     padding: 0.4em;
     color: white;
+}
+
+br {
+    line-height: 2;
 }
