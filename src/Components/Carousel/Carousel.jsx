@@ -19,11 +19,14 @@ const Carousel = () => {
         <div className='carousel'>
             <BsArrowLeftCircleFill
                 className='arrow arrow-left' onClick={prevSlide}></BsArrowLeftCircleFill>
-            {slides.map((item, idx) => {
-                return <img src={item.src} alt={item.alt} key={idx}
-                    height={"400px"} width={"800px"}
-                    className={slide === idx ? "slide" : "slide slide-hidden"} ></img>
-            })}
+
+            <div className='slider'>
+                {slides.map((item, idx) => {
+                    return <img src={item.src} alt={item.alt} key={idx}
+                        className='img-slider' style={{ translate: `${-100 * slide}%` }}></img>
+                })}
+            </div>
+
             <BsArrowRightCircleFill
                 className='arrow arrow-right' onClick={nextSlide}></BsArrowRightCircleFill>
             <span className='indicators'>

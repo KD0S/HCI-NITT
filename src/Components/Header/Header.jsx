@@ -12,6 +12,10 @@ export const Header = () => {
     let path = '/members';
     navigate(path);
   }
+  const routeContact = () => {
+    let path = '/Contact';
+    navigate(path);
+  }
 
 
   return (
@@ -26,7 +30,7 @@ export const Header = () => {
         <div>Projects</div>
         <div>Publications</div>
         <div>Collaborate</div>
-        <div>Contact Us</div>
+        <div onClick={routeContact}>Contact Us</div>
       </div>
     </div>
   )

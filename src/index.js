@@ -7,6 +7,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import Members from './Pages/Members/Members';
+import Contact from './Pages/Contact/Contact';
 
 
 const router = createBrowserRouter([
@@ -17,6 +18,11 @@ const router = createBrowserRouter([
   {
      path: "/members",
      element: <Members></Members>
+  },
+
+  {
+    path: "/contact",
+    element: <Contact></Contact>
   }
 ])
 
