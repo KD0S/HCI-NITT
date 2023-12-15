@@ -10,7 +10,7 @@ export const InfoCard = ({ imgPath, title, content }) => {
             <p>{content}</p>
          </div>
          <div className="icons">
-            <FaLinkedin className="icon"></FaLinkedin>
+            <FaLinkedin className="icon">linkedin</FaLinkedin>
             <FaGithubSquare className="icon"></FaGithubSquare>
          </div>
       </div>

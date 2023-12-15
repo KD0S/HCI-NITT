@@ -8,7 +8,7 @@ const Members = () => {
     return (
         <div>
             <Header></Header>
-
+            <div className='heading'>Research Investigators</div>
             <div className='members'>
                 {investigatorDetails.map((member) =>
                     <InfoCard
@@ -18,7 +18,7 @@ const Members = () => {
                         content={member.position}></InfoCard>
                 )}
             </div>
-
+            <div className='heading'>Research Scholars</div>
             <div className='members'>
                 {scholarDetails.map((member) =>
                     <InfoCard

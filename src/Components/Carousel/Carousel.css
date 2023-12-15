@@ -1,9 +1,3 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 .carousel {
     position: relative;
     display: flex;
@@ -60,6 +54,10 @@
     display: flex;
     position: absolute;
     bottom: 1rem;
+    background-color: rgb(86, 86, 188);
+    padding: 1em;
+    border-radius: 25px;
+    opacity: 75%;
 }
 
 .indicator {
