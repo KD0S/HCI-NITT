@@ -1,0 +1,27 @@
+.footer {
+    height: 150px;
+    width: 100vw;
+    background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
+    position: relative;
+    bottom: 0px;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-item h2 {
+    color: white;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-tag {
+    top: 50px;
+    position: relative;
+}

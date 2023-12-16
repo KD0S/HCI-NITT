@@ -1,0 +1,23 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+.login-header {
+    color: rgb(37, 37, 111);
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    /* background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%); */
+    justify-content: center;
+}
+
+#btn {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+}

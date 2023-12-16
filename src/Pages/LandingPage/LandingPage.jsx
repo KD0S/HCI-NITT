@@ -1,8 +1,9 @@
 import './LandingPage.css'
 
-import { Header } from '../../Components/Header/Header';
 import Carousel from '../../Components/Carousel/Carousel';
 import ContentCard from '../../Components/ContentCard/ContentCard';
+import { Header } from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
 
 
 function LandingPage() {
@@ -13,6 +14,7 @@ function LandingPage() {
         <Carousel></Carousel>
       </div>
       <ContentCard></ContentCard>
+      <Footer></Footer>
     </div>
   );
 }

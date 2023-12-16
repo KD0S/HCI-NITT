@@ -2,6 +2,7 @@ import './Members.css'
 import { Header } from '../../Components/Header/Header'
 import { investigatorDetails, scholarDetails } from './MemberDetails'
 import { InfoCard } from '../../Components/InfoCard/InfoCard.jsx'
+import Footer from '../../Components/Footer/Footer.jsx'
 
 
 const Members = () => {
@@ -28,6 +29,7 @@ const Members = () => {
                         content={member.position}></InfoCard>
                 )}
             </div>
+            <Footer></Footer>
         </div>
     )
 }

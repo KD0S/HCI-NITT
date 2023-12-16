@@ -1,0 +1,10 @@
+.form {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.form>div {
+    margin: 1em;
+}
