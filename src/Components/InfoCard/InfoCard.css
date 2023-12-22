@@ -4,7 +4,7 @@
    align-items: center;
    padding: 1em;
    width: 350px;
-   height: 300px;
+   height: 320px;
    box-shadow: 0 8px 16px 0 rgba(22, 10, 126, 0.2);
    perspective: none;
    transition: 0.3s;
@@ -17,7 +17,7 @@
 }
 
 .card-main>img {
-   aspect-ratio: auto;
+   aspect-ratio: 1;
    width: 150px;
    border-radius: 50%;
 }
@@ -49,11 +49,31 @@
    font: 400 0.9rem "Poppins", sans-serif;
 }
 
+.icons {
+   color: white;
+   font-size: 1.75em;
+}
 
 .icon {
+   margin-left: 0.2em;
+   margin-right: 0.2em;
+}
+
+.icons-alt {
+   font-size: 1em;
+   font-weight: bold;
    color: white;
-   font-size: 1.5em;
-   padding: 0.5em;
+   background-color: red;
+   border: none;
+   border-radius: 10px;
+   padding: 0.3em 1em 0.3em 1em;
+   margin-bottom: 1em;
+}
+
+button:hover {
+   cursor: pointer;
+   scale: 1.2;
+   transition: 200ms ease-in-out;
 }
 
 @media (max-width: 475px) {

@@ -16,7 +16,9 @@ const Members = () => {
                         key={member.name}
                         imgPath={member.imgPath}
                         title={member.name}
-                        content={member.position}></InfoCard>
+                        content={member.position}
+                        icons={true}>
+                    </InfoCard>
                 )}
             </div>
             <div className='heading'>Research Scholars</div>
@@ -26,7 +28,8 @@ const Members = () => {
                         key={member.name}
                         imgPath={member.imgPath}
                         title={member.name}
-                        content={member.position}></InfoCard>
+                        content={member.position}
+                        icons={true}></InfoCard>
                 )}
             </div>
             <Footer></Footer>
