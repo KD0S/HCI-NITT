@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Footer from '../../Components/Footer/Footer'
 import { Header } from '../../Components/Header/Header'
 import React from './Contact.css'
+import { IoIosMail } from "react-icons/io";
+import { FaPhone, FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -59,13 +61,33 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contact-details'>
-                        <div>
-                            <div className='contact-detail icon'></div>
-                            <div className='contact-detail text'></div>
+                        <div className='contact-detail-item'>
+                            <div className='contact-detail-icon'>
+                                <FaLocationDot></FaLocationDot>
+                            </div>
+                            <div className='contact-detail-text'>
+                                EEG Lab, NIT Hospital, NIT Tiruchirappalli
+                            </div>
                         </div>
-                        <div>
-                            <div className='contact-detail icon'></div>
-                            <div className='contact-detail text'></div>
+                        <div className='contact-detail-item'>
+                            <div className='contact-detail-icon'>
+                                <IoIosMail></IoIosMail>
+                            </div>
+                            <div className='contact-detail-text'>
+                                shameedha@nitt.edu
+                                <br />
+                                hci.nitt620015@gmail.com
+                            </div>
+                        </div>
+                        <div className='contact-detail-item'>
+                            <div className='contact-detail-icon'>
+                                <FaPhone></FaPhone>
+                            </div>
+                            <div className='contact-detail-text'>
+                                Staff room : 0431-2503215
+                                <br />
+                                Office : 0431-2503200
+                            </div>
                         </div>
                     </div>
                 </div>
