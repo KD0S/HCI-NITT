@@ -31,49 +31,40 @@ const MembersAdmin = () => {
     const handleSubmit = (event) => {
         event.preventDefault()
 
-        if (name === '' || role === '' || designation === '') {
-            setError(true)
-            setNotif('error')
-            setMessage('Required Fields Missing')
-            setTimeout(() => {
-                setError(false)
-            }, 3000)
-            return
+        const newPerson = {
+            name: name,
+            role: role,
+            designation: designation,
+            address: address,
+            mail: mail,
+            number: number,
+            imgPath: imgPath,
+            linkedin: linkedIn,
+            gscholar: gScholar,
+            github: github,
         }
 
-        else {
-            const newPerson = {
-                name: name,
-                role: role,
-                designation: designation,
-                address: address,
-                mail: mail,
-                number: number,
-                imgPath: imgPath,
-                linkedin: linkedIn,
-                gscholar: gScholar,
-                github: github,
-            }
+        personService.create(newPerson).then(
+            (data) => setMemberDetails(memberDetails.concat(data.data))
+        )
 
-            personService.create(newPerson)
+        setError(true)
+        setNotif('success')
+        setMessage('Added Successfully')
+        setTimeout(() => {
+            setError(false)
+        }, 3000)
+        return
 
-            setError(true)
-            setNotif('success')
-            setMessage('Added Successfully')
-            setTimeout(() => {
-                setError(false)
-            }, 3000)
-            return
-        }
     }
 
 
     return (
         <div>
             <div>{error ? <Alert type={notif} message={message}></Alert> : null}</div>
-            <div className='member-form-wrapper'>
-                <div className='admin-member-container'>
-                    <div className='admin-member-text'>
+            <div className='form-wrapper'>
+                <div className='form-container'>
+                    <div className='form-text'>
                         Add Member
                     </div>
                     <form onSubmit={handleSubmit}>
@@ -155,13 +146,14 @@ const MembersAdmin = () => {
 
             <div className='members'>
                 {memberDetails ? memberDetails.map((member) =>
-                    <InfoCard
+                    <InfoCard className='member'
                         id={member.id}
                         key={member.id}
                         imgPath={member.imgPath}
                         title={member.name}
                         content={member.designation}
-                        icons={false}>
+                        memberDetails={memberDetails}
+                        setMemberDetails={setMemberDetails}>
                     </InfoCard>
                 ) : null}
             </div>

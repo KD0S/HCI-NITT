@@ -16,10 +16,11 @@
    box-shadow: 0 16px 24px 0 rgba(22, 10, 126, 0.2);
 }
 
-.card-main>img {
+.card-main img {
    aspect-ratio: 1;
    width: 150px;
    border-radius: 50%;
+   background-color: white;
 }
 
 .card-text {
@@ -51,13 +52,25 @@
 
 .icons {
    color: white;
-   font-size: 1.75em;
+   font-size: 1.3em;
+   display: flex;
+   gap: 20px;
 }
 
-.icon {
-   margin-left: 0.2em;
-   margin-right: 0.2em;
+
+.icon:hover {
+   scale: 1.3;
+   transition: 100ms ease-in-out;
 }
+
+a {
+   color: white;
+}
+
+a:visited {
+   color: white;
+}
+
 
 .icons-alt {
    font-size: 1em;

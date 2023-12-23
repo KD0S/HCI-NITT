@@ -9,7 +9,7 @@ const getAll = async () => {
 
 const create = async newObject => {
     const response = await axios.post(baseUrl, newObject)
-    console.log(response)
+    return response
 }
 
 const remove = async (id)  => {

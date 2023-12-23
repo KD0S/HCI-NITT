@@ -5,36 +5,36 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
-.member-form-wrapper {
+.form-wrapper {
     display: flex;
     justify-content: center;
     margin: 1em;
 }
 
-.admin-member-container {
-    max-width: 800px;
+.form-container {
+    min-width: 300px;
     background: #fff;
-    width: 800px;
+    border-radius: 20px;
     padding: 25px 40px 10px 40px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(30, 54, 126, 0.8);
 }
 
-.admin-member-container .admin-member-text {
+.form-container .form-text {
     text-align: center;
     font-size: 41px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
+    color: rgb(30, 54, 126);
 
 }
 
-.admin-member-container form {
+.form-container form {
     padding: 30px 0 0 0;
 }
 
-.admin-member-container form .form-row {
+.form-container form .form-row {
     display: flex;
     margin: 32px 0;
 }
@@ -106,4 +106,10 @@ form .form-row {
 .input-data input:focus~.underline:before,
 .input-data input:not(:placeholder-shown)~.underline:before {
     transform: scale(1);
+}
+
+.submit-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }
