@@ -13,6 +13,9 @@ import Login from './Pages/Admin/Login/Login';
 import Dashboard from './Pages/Admin/Dashboard/Dashboard';
 import PublicationsAdmin from './Pages/Admin/Publications/Publications';
 import { Publications } from './Pages/Publications/Publications';
+import Research from './Pages/Research/Research';
+import Collaborate from './Pages/Collaborate/Collaborate';
+import Project from './Pages/Admin/Projects/Project';
 
 
 
@@ -32,6 +35,18 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <Contact></Contact>
+  },
+  {
+    path: "/research",
+    element: <Research></Research>
+  },
+  {
+    path: "/projects",
+    element: <Project></Project>
+  },
+  {
+    path: "/collaborate",
+    element: <Collaborate></Collaborate>
   },
   {
     path: "/admin/login",

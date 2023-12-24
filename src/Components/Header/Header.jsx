@@ -29,7 +29,7 @@ export const Header = () => {
     navigate(path);
   }
   const routeProject = () => {
-    let path = '/project';
+    let path = '/projects';
     navigate(path);
   }
 
