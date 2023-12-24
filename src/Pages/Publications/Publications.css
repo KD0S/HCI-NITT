@@ -1,0 +1,9 @@
+.publications-wrapper {
+    height: 100vh;
+}
+
+.heading-wrapper>h1 {
+    color: rgb(30, 54, 126);
+    text-align: center;
+    padding: 1em;
+}

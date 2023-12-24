@@ -1,0 +1,33 @@
+.publication {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+.publication-container {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(112.1deg, rgb(47, 53, 71) 20.2%, rgb(30, 54, 126) 71.4%);
+    width: 55vw;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.publication-container>ul {
+    width: 50vw;
+    color: white;
+    padding: 1em;
+    font-style: italic;
+}
+
+.publication-container>a {
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.publication-container>a:hover {
+    color: lightskyblue;
+    transition: 100ms ease-in-out;
+}

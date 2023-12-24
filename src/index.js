@@ -11,6 +11,8 @@ import Contact from './Pages/Contact/Contact';
 import MembersAdmin from './Pages/Admin/Members/Members';
 import Login from './Pages/Admin/Login/Login';
 import Dashboard from './Pages/Admin/Dashboard/Dashboard';
+import PublicationsAdmin from './Pages/Admin/Publications/Publications';
+import { Publications } from './Pages/Publications/Publications';
 
 
 
@@ -23,32 +25,34 @@ const router = createBrowserRouter([
      path: "/members",
      element: <Members></Members>
   },
-
+  {
+    path: "/publications",
+    element: <Publications></Publications>
+  },
   {
     path: "/contact",
     element: <Contact></Contact>
   },
-
   {
     path: "/admin/login",
     element: <Login></Login>
   },
-
   {
     path: "/admin/login",
     element: <Login></Login>
   },
-
   {
     path: "/admin/dashboard",
     element: <Dashboard></Dashboard>
   },
-  
   {
     path: "/admin/members",
     element: <MembersAdmin></MembersAdmin>
+  },
+  {
+    path: "/admin/publications",
+    element: <PublicationsAdmin></PublicationsAdmin>
   }
-
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

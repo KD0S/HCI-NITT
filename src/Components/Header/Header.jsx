@@ -16,6 +16,22 @@ export const Header = () => {
     let path = '/Contact';
     navigate(path);
   }
+  const routePublications = () => {
+    let path = '/Publications';
+    navigate(path);
+  }
+  const routeResearch = () => {
+    let path = '/research';
+    navigate(path);
+  }
+  const routeCollaborate = () => {
+    let path = '/collaborate';
+    navigate(path);
+  }
+  const routeProject = () => {
+    let path = '/project';
+    navigate(path);
+  }
 
 
   return (
@@ -26,10 +42,10 @@ export const Header = () => {
       <div className='headings'>
         <div onClick={routeHome}>Home</div>
         <div onClick={routeMember}>Members</div>
-        <div>Research</div>
-        <div>Projects</div>
-        <div>Publications</div>
-        <div>Collaborate</div>
+        <div onClick={routeResearch}>Research</div>
+        <div onClick={routeProject}>Projects</div>
+        <div onClick={routePublications}>Publications</div>
+        <div onClick={routeCollaborate}>Collaborate</div>
         <div onClick={routeContact}>Contact Us</div>
       </div>
     </div>
