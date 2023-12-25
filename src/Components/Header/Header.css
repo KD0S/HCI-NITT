@@ -1,37 +1,43 @@
-.main-header {
+.header-main {
+    height: 8vh; /* remaining space is filled by carousel in homepage */
     display: flex;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
-    background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
-    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    background: #012153;
+    /* position: sticky; */
+    /* background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%); */
+    /* border-bottom: 3px solid white; */
 }
 
-h1 {
-    margin: 0;
-    padding: 0.2em;
+.app-title {
     color: white;
+    margin-left: 2.5rem;
+    font: normal 600 2rem "Kanit", sans-serif;
 }
 
 .headings {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 3em;
-    margin: 0;
+    align-items: center;
+    gap: 2em;
+    margin-right: 2.5rem;
+}
+
+/* styling Link tags */
+.headings > a {
     color: white;
-    font-weight: bolder;
+    text-decoration: none;
+    font: normal 500 1.1rem "Kanit", sans-serif;
 }
 
-.headings>div {
-    padding: 1em;
-    border-bottom: 5px solid transparent;
-}
-
-.headings div:hover {
+/* .headings div:hover {
     cursor: pointer;
     border-bottom: 5px solid black;
     transition: 0.5s;
     color: rgb(115, 132, 185);
+} */
+
+.headings > a:hover {
+    font-size: larger;
+    transition: font-size 0.4s;
 }

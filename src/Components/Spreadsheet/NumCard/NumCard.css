@@ -1,0 +1,45 @@
+.numcard-main {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #011e4b, #012359);
+  box-shadow: 6px 6px 3px #011534, -6px -6px 3px #012d72;
+}
+
+.numcard-context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 2.5rem;
+
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.numcard-context-icon {
+  font-size: 3rem;
+}
+
+.numcard-context-name {
+  font: normal 400 2rem "Kanit", sans-serif;
+}
+
+.numcard-divider {
+  width: 3px;
+  height: 69%;
+  background: white;
+  border-radius: 100%;
+}
+
+.numcard-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal 400 3rem "Kanit", sans-serif;
+  padding: 2rem 2rem;
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
