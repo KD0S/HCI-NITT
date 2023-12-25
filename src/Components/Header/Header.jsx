@@ -1,37 +1,19 @@
-import './Header.css'
-import { useNavigate } from "react-router-dom";
+import "./Header.css";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  let navigate = useNavigate();
-
-  const routeHome = () => {
-    let path = '/';
-    navigate(path);
-  }
-  const routeMember = () => {
-    let path = '/members';
-    navigate(path);
-  }
-  const routeContact = () => {
-    let path = '/Contact';
-    navigate(path);
-  }
-
-
   return (
-    <div className='main-header'>
-      <div>
-        <h1>HCI@NITT</h1>
-      </div>
-      <div className='headings'>
-        <div onClick={routeHome}>Home</div>
-        <div onClick={routeMember}>Members</div>
-        <div>Research</div>
-        <div>Projects</div>
-        <div>Publications</div>
-        <div>Collaborate</div>
-        <div onClick={routeContact}>Contact Us</div>
+    <div className="header-main">
+      <h1 className="app-title">HCI@NITT</h1>
+      <div className="headings">
+        <Link to="/">Home</Link>
+        <Link to="/members">Members</Link>
+        <Link>Research</Link>
+        <Link>Projects</Link>
+        <Link>Publications</Link>
+        <Link>Collaborate</Link>
+        <Link to="/Contact">Contact Us</Link>
       </div>
     </div>
-  )
-}
+  );
+};
