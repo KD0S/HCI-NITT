@@ -1,27 +1,56 @@
-.footer {
-    height: 150px;
-    width: 100vw;
-    background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
-    position: relative;
-    bottom: 0px;
+.footer-main {
+  width: 100%;
+  padding: 0rem 4rem;
+  background: #012153;
 }
 
 .footer-items {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-item h2 {
-    color: white;
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem 0;
+  color: white;
 }
 
-.footer p {
-    color: white;
-    margin: 0;
-    text-align: center;
+.footer-item-title {
+  font: normal 500 2rem "Kanit", sans-serif;
+}
+
+.footer-address-detail {
+  color: white;
+}
+
+.footer-address-icon {
+  margin-right: 0.4rem;
+  font-size: 1rem;
+}
+
+.footer-address-detail > a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-address-detail > a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.footer-address-span {
+  color: white;
+  font-size: 1.1rem;
 }
 
 .footer-tag {
-    top: 50px;
-    position: relative;
+  /* width: 50%; */
+  color: white;
+  text-align: center;
+  /* padding: 2rem 0rem; */
+  padding: 1rem 0;
+  border-top: 1px solid white;
 }

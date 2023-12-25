@@ -1,24 +1,24 @@
-import './Footer.css'
+import "./Footer.css";
+
+
+import FooterAddress from "./FooterAddress";
+import FooterQuickLinks from "./FooterQuickLinks";
 
 const Footer = () => {
-    return (
-        <div className='footer'>
-            <div className='footer-items'>
-                <div className='footer-item'>
-                    <h2>Address</h2>
-                </div>
-                <div className='footer-item'>
-                    <h2>Quick Links</h2>
-                </div>
-                <div className='footer-item'>
-                    <h2>Logo</h2>
-                </div>
-            </div>
-            <div className='footer-tag'>
-                <p>© HCI@NITT, All Rights Reserved. </p>
-            </div>
+  return (
+    <div className="footer-main">
+      <div className="footer-items">
+        <FooterAddress />
+        <FooterQuickLinks />
+        <div className="footer-item">
+          <h2 className="footer-item-title">Logo</h2>
         </div>
-    )
-}
+      </div>
+      <div className="footer-tag">
+        © HCI@NITT, All Rights Reserved.
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
