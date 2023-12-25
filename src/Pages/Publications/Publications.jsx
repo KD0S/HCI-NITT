@@ -34,12 +34,14 @@ export const Publications = () => {
                 <div className='heading-wrapper'>
                     <h1>Peer-Reviewed Journals</h1>
                     {journals ? journals.map(journal => <Publication
-                        name={journal.name} link={journal.link} key={journal.link}></Publication>) : null}
+                        name={journal.name} authors={journal.authors}
+                        publisher={journal.publisher} link={journal.link} key={journal.link}></Publication>) : null}
                 </div>
                 <div className='heading-wrapper'>
                     <h1>Peer-Reviewed Conferences</h1>
                     {conferences ? conferences.map(conference => <Publication
-                        name={conference.name} link={conference.link} key={conference.link}></Publication>) : null}
+                        name={conference.name} authors={conference.authors}
+                        publisher={conference.publisher} link={conference.link} key={conference.link}></Publication>) : null}
                 </div>
             </div>
             <Footer></Footer>

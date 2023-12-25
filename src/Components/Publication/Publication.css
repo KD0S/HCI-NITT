@@ -17,7 +17,11 @@
     width: 50vw;
     color: white;
     padding: 1em;
+}
+
+.publication-container strong {
     font-style: italic;
+    color: lightskyblue;
 }
 
 .publication-container>a {

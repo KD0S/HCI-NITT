@@ -10,6 +10,8 @@ const PublicationsAdmin = () => {
     const [link, setLink] = useState('')
     const [year, setYear] = useState('')
     const [type, setType] = useState('')
+    const [publisher, setPublisher] = useState('')
+    const [memberIds, setMemberIds] = useState('')
     const [authors, setAuthors] = useState('')
     const [notif, setNotif] = useState('success')
     const [message, setMessage] = useState('')
@@ -30,7 +32,9 @@ const PublicationsAdmin = () => {
             link: link,
             year: year,
             type: type,
-            authors: authors
+            publisher: publisher,
+            authors: authors,
+            member_ids: memberIds
         }
 
         publicationService.create(newPublication).then((data) => {
@@ -79,6 +83,12 @@ const PublicationsAdmin = () => {
                                 <div className="underline"></div>
                                 <label>Type</label>
                             </div>
+                            <div className="input-data">
+                                <input type="text" placeholder=''
+                                    onChange={(e) => setPublisher(e.target.value)} />
+                                <div className="underline"></div>
+                                <label>Journal/Conference</label>
+                            </div>
                         </div>
                         <div className='form-row'>
                             <div className="input-data">
@@ -96,6 +106,14 @@ const PublicationsAdmin = () => {
                                 <label>Authors</label>
                             </div>
                         </div>
+                        <div className='form-row'>
+                            <div className="input-data">
+                                <input type="text" placeholder=''
+                                    onChange={(e) => setMemberIds(e.target.value)} />
+                                <div className="underline"></div>
+                                <label>Member IDs</label>
+                            </div>
+                        </div>
                         <div className='submit-row'>
                             <button className='login-btn' type='submit'>Add</button>
                         </div>
@@ -106,7 +124,8 @@ const PublicationsAdmin = () => {
                 {publications ? publications.map(publication =>
                     <div className='publications-wrapper-item'>
                         <Publication
-                            name={publication.name} link={publication.link} key={publication.link}
+                            name={publication.name} authors={publication.authors} publisher={publication.publisher}
+                            link={publication.link} key={publication.link}
                             admin={true} id={publication.id} publications={publications}
                             setPublications={setPublications}></Publication>
                     </div>
