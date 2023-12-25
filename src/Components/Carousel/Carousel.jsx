@@ -36,7 +36,7 @@ const Carousel = () => {
             </div>
 
             <div className="overlay">
-                <h2>Welcome to</h2>
+                {/* <h2>Welcome to</h2> */}
                 <h1>Human-Computer Interface Lab</h1>
                 <h1>@National Institute of Technology, Tiruchirappalli</h1>
             </div>
@@ -45,7 +45,7 @@ const Carousel = () => {
                 className="arrow arrow-right"
                 onClick={nextSlide}
             ></BsArrowRightCircleFill>
-            
+
             <span className="indicators">
                 {imgSlides.map((_, idx) => {
                     return (
