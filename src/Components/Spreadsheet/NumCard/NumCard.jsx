@@ -35,9 +35,6 @@ const NumCard = ({ contextName, contextCount, isVisible }) => {
     Members: <FaPeopleGroup />,
   };
 
-  function start() {
-    console.log("hiiiii");
-  }
 
   return (
     <div className="numcard-main">

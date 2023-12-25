@@ -39,6 +39,6 @@
 } */
 
 .headings>a:hover {
-    scale: 1.3;
+    font-size: larger;
     transition: font-size 0.4s;
 }

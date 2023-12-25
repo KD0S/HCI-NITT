@@ -15,16 +15,17 @@ const AboutUs = () => {
       <div className="about-content">
         <h1 className="about-content-title">ABOUT US</h1>
         <p className="about-content-body">
-          The EEG Laboratory at the National Institute of Technology (NIT)
-          Trichy, India, is dedicated to investigating various neuro-physical
+          The <strong>EEG Laboratory</strong> at the <strong>National Institute of Technology (NIT)
+            Trichy, India</strong>, is dedicated to investigating various neuro-physical
           aspects and functionalities of the human brain and body. Our focus
-          areas encompass the in-depth exploration of human emotions, emotional
-          intelligence, cognitive load, imagined speech and motor imagery using
-          brain signals (BCI).
+          areas encompass the in-depth exploration of <strong>human emotions</strong>, <strong>emotional
+            intelligence</strong>, <strong>cognitive load</strong>, <strong>imagined speech</strong> and <strong>motor imagery using
+              brain signals (BCI) </strong>.
           <br />
           <br />
           Our research involves the processing of brain signals acquired through
-          advanced neuro-imaging techniques such as Electroencephalogram (EEG)
+          advanced neuro-imaging techniques such as
+          <strong> Electroencephalogram (EEG) </strong>
           and sensors-based methods on human body. We employ cutting-edge
           time-frequency signal processing methods to extract valuable insights
           into the underlying functions of the brain.
@@ -32,9 +33,9 @@ const AboutUs = () => {
           <br />
           The laboratory's expertise extends to the specialization in
           classification and prediction tasks of brain signals, leveraging
-          advanced Machine Learning (ML) and Deep Learning (DL) techniques. Our
+          advanced <strong>Machine Learning (ML)</strong> and <strong>Deep Learning (DL)</strong> techniques. Our
           dynamic team comprises Ph.D. and M. Tech students under the guidance
-          of Dr. B Shameedha Begum, a distinguished faculty member in the
+          of <a href="https://www.nitt.edu/home/academics/departments/cse/faculty/sameedha/"><strong>Dr. B Shameedha Begum</strong></a>, a distinguished faculty member in the
           Department of Computer Science Engineering (CSE) at NIT Trichy.
         </p>
       </div>

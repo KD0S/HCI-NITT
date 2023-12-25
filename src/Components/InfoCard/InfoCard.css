@@ -60,7 +60,8 @@
 
 .icon:hover {
    scale: 1.3;
-   transition: 100ms ease-in-out;
+   color: lightblue;
+   transition: 150ms ease-in-out;
 }
 
 a {

@@ -30,13 +30,13 @@
   font-size: 1rem;
 }
 
-.footer-address-detail > a {
+.footer-address-detail>a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
 }
 
-.footer-address-detail > a:hover {
+.footer-address-detail>a:hover {
   color: grey;
   text-decoration: underline;
 }
