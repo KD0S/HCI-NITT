@@ -1,0 +1,26 @@
+.projects-content-body {
+    font: normal 600 2em "Kanit", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-content-body h2 {
+    color: #012153;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-content {
+    display: flex;
+    gap: 30px;
+}
+
+.projects-icon {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(103, 131, 232);
+}

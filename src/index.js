@@ -15,7 +15,7 @@ import PublicationsAdmin from './Pages/Admin/Publications/Publications';
 import { Publications } from './Pages/Publications/Publications';
 import Research from './Pages/Research/Research';
 import Collaborate from './Pages/Collaborate/Collaborate';
-import Project from './Pages/Admin/Projects/Project';
+import Projects from './Pages/Projects/Projects';
 
 
 
@@ -42,15 +42,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects",
-    element: <Project></Project>
+    element: <Projects></Projects>
   },
   {
     path: "/collaborate",
     element: <Collaborate></Collaborate>
-  },
-  {
-    path: "/admin/login",
-    element: <Login></Login>
   },
   {
     path: "/admin/login",

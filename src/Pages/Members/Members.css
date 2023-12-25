@@ -6,13 +6,11 @@
     flex-wrap: wrap;
     gap: 2em;
     padding: 1em;
+    margin-bottom: 100px;
 }
 
-.heading {
+.members-heading {
+    font: normal 600 3em "Kanit", sans-serif;
     text-align: center;
-    font-size: 36px;
-    padding: 1em;
-    font-weight: 800;
-    font-family: sans-serif;
-    color: rgb(30, 54, 126);
+    margin-top: 1em;
 }

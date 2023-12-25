@@ -26,7 +26,7 @@ const Members = () => {
     return (
         <div>
             <Header></Header>
-            <div className='heading'>Research Investigators</div>
+            <h2 className='members-heading'>Research Investigators</h2>
             {investigatorDetails ? <div className='members'>
                 {investigatorDetails.map((member) =>
                     <InfoCard
@@ -41,7 +41,7 @@ const Members = () => {
                     </InfoCard>
                 )}
             </div> : null}
-            <div className='heading'>Research Scholars</div>
+            <h2 className='members-heading'>Research Scholars</h2>
             {scholarDetails ? <div className='members'>
                 {scholarDetails.map((member) =>
                     <InfoCard className='member'
