@@ -9,6 +9,7 @@ const Map = () => {
       loading="lazy"
       referrerPolicy="no-referrer-when-downgrade"
       title="map"
+      style={{ border: 'none' }}
     ></iframe>
   );
 };
