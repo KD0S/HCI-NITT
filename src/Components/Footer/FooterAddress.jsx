@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { FaMapLocationDot } from "react-icons/fa6";
-import { MdCall } from "react-icons/md";
-import { IoIosMail } from "react-icons/io";
 import { SiGmail } from "react-icons/si";
 import { IoCall } from "react-icons/io5";
 
