@@ -1,24 +1,75 @@
-.collab-content-body {
-    padding: 4em 1.5em 4em 1.5em;
-    font: normal 300 20px "Kanit", sans-serif;
-    background-color: #f9f7f1;
+.collab-opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 10rem;
+  gap: 1rem;
+  background-color: #012153;
+  color: white;
 }
 
-.collab-content-body div {
-    padding: 1em;
+.collab-opening-title {
+  font: normal 600 6rem "Kanit", sans-serif;
 }
 
-.collab-content-body li {
-    padding: 0.3em;
+.collab-opening-body {
+  text-align: justify;
+  font: normal 300 1.15rem "Kanit", sans-serif;
 }
 
-.collab-content-body a :hover {
-    color: #012153;
-    scale: 1.1;
-    transition: 200ms ease-in-out;
+.collab-opening-body > a {
+  text-decoration: none;
 }
 
-.collab-content-body strong,
-.collab-content-body h2 {
-    color: rgb(103, 131, 232);
+.collab-opening-body > a:hover {
+  color: lightskyblue;
+}
+
+.collab-content {
+  padding: 1.5rem 2.5rem;
+  background-color: #f9f7f1;
+}
+
+.collab-content-list-container {
+  padding: 1rem;
+}
+
+.collab-content-list-title {
+  color: rgb(103, 131, 232);
+  font: normal 500 3rem "Kanit", sans-serif;
+}
+
+.collab-content-list {
+  padding-top: 0.5rem;
+  list-style: none;
+}
+
+.collab-content-list > li {
+  padding: 0.25rem;
+  font: normal 300 1.3rem "Kanit", sans-serif;
+}
+
+.collab-content-list > li::before {
+  content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background: rgb(103, 131, 232);
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 100%;
+  margin-right: 0.6rem; /* Also needed for space (tweak if needed) */
+}
+
+.collab-content-list a {
+  color: rgb(103, 131, 232);
+  text-decoration: none;
+}
+
+.collab-content-list a:hover {
+  color: #012153;
+  transition: color 200ms ease-in-out;
+}
+
+.collab-content > p {
+  padding: 1rem;
+  font: normal 300 1.3rem "Kanit", sans-serif;
 }
