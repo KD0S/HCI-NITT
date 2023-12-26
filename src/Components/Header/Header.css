@@ -1,43 +1,35 @@
 .header-main {
-    height: 8vh; /* remaining space is filled by carousel in homepage */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #012153;
-    /* position: sticky; */
-    /* background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%); */
-    /* border-bottom: 3px solid white; */
+  height: 8vh; /* remaining space is filled by carousel in homepage */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #012153;
+  background: #001233;
+  /* position: sticky; */
 }
 
 .app-title {
-    color: white;
-    margin-left: 2.5rem;
-    font: normal 600 2rem "Kanit", sans-serif;
+  color: white;
+  margin-left: 2.5rem;
+  font: normal 600 2rem "Kanit", sans-serif;
 }
 
 .headings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-    margin-right: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-right: 2.5rem;
 }
 
 /* styling Link tags */
 .headings > a {
-    color: white;
-    text-decoration: none;
-    font: normal 500 1.1rem "Kanit", sans-serif;
+  color: white;
+  text-decoration: none;
+  font: normal 500 1.1rem "Kanit", sans-serif;
 }
 
-/* .headings div:hover {
-    cursor: pointer;
-    border-bottom: 5px solid black;
-    transition: 0.5s;
-    color: rgb(115, 132, 185);
-} */
-
 .headings > a:hover {
-    font-size: larger;
-    transition: font-size 0.4s;
+  font-size: larger;
+  transition: font-size 0.4s;
 }

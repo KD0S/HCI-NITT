@@ -35,18 +35,6 @@
   padding: 1rem;
 }
 
-.about-content::before {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: #012153;
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  z-index: 1;
-}
-
 .about-content-title {
   font: normal 600 8rem "Kanit", sans-serif;
 }
