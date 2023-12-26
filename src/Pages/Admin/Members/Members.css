@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
     box-sizing: border-box;
+    outline: none;
+}
+
+.admin-member-body {
+    display: flex;
+}
+
+.admin-member-container {
+    height: 100vh;
+    overflow: scroll;
+    width: 100vw;
 }
 
 .form-wrapper {
     display: flex;
     justify-content: center;
-    margin: 1em;
+    margin: 1em 0em 1em 0em;
 }
 
 .form-container {
@@ -47,7 +55,7 @@ form .form-row .input-data {
 }
 
 form .form-row {
-    height: 70px;
+    height: 50px;
 }
 
 .input-data input {

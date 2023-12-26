@@ -1,39 +1,41 @@
 .header-main {
-  height: 8vh; /* remaining space is filled by carousel in homepage */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #001233;
-  /* position: sticky; */
+    height: 8vh;
+    /* remaining space is filled by carousel in homepage */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001233;
+    /* position: sticky; */
 }
 
 .app-title {
-  color: white;
-  margin-left: 2.5rem;
-  font: normal 600 2rem "Kanit", sans-serif;
+    color: white;
+    margin-left: 2.5rem;
+    font: normal 600 2rem "Kanit", sans-serif;
 }
 
 .headings {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
-  margin-right: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-right: 2.5rem;
 }
 
 /* styling Link tags */
-.headings > a {
-  color: white;
-  text-decoration: none;
-  font: normal 500 1.1rem "Kanit", sans-serif;
+.headings>a {
+    color: white;
+    text-decoration: none;
+    font: normal 500 1.1rem "Kanit", sans-serif;
 }
 
-.headings > a:hover {
-  color: lightskyblue;
-  transition: 250ms ease-in-out;
+.headings>a:hover {
+    color: lightskyblue;
+    transition: 250ms ease-in-out;
 }
 
 .headings .active {
-  scale: 1.2;
-  color: rgb(103, 131, 232);
+    scale: 1.2;
+    color: rgb(103, 131, 232);
+    transition: 300ms ease-in-out;
 }

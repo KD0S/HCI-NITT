@@ -2,3 +2,13 @@
     display: flex;
     justify-content: center;
 }
+
+.admin-publication-body {
+    display: flex;
+}
+
+.admin-publication-container {
+    height: 100vh;
+    overflow: scroll;
+    width: 100%;
+}

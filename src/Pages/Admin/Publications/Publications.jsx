@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Alert from '../../../Components/Alert/Alert';
 import publicationService from "../../../Components/publicationService";
 import Publication from '../../../Components/Publication/Publication';
+import { AdminHeader } from '../../../Components/AdminHeader/AdminHeader';
 
 
 const PublicationsAdmin = () => {
@@ -53,83 +54,86 @@ const PublicationsAdmin = () => {
 
 
     return (
-        <div>
-            <div>{error ? <Alert type={notif} message={message}></Alert> : null}</div>
-            <div className='form-wrapper'>
-                <div className='form-container' style={{ width: '800px' }}>
-                    <div className='form-text'>
-                        Add Publication
-                    </div>
-                    <form onSubmit={handleSubmit}>
+        <div className='admin-publication-body'>
+            <AdminHeader></AdminHeader>
+            <div className='admin-publication-container'>
+                <div>{error ? <Alert type={notif} message={message}></Alert> : null}</div>
+                <div className='form-wrapper'>
+                    <div className='form-container' style={{ width: '800px' }}>
+                        <div className='form-text'>
+                            Add Publication
+                        </div>
+                        <form onSubmit={handleSubmit}>
 
-                        <div className="form-row">
-                            <div className="input-data">
-                                <input type="text" required placeholder=''
-                                    onChange={(e) => setName(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Name</label>
+                            <div className="form-row">
+                                <div className="input-data">
+                                    <input type="text" required placeholder=''
+                                        onChange={(e) => setName(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Name</label>
+                                </div>
                             </div>
-                        </div>
-                        <div className="form-row">
-                            <div className="input-data" style={{ flex: '20%' }}>
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setYear(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Year</label>
+                            <div className="form-row">
+                                <div className="input-data" style={{ flex: '20%' }}>
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setYear(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Year</label>
+                                </div>
+                                <div className="input-data">
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setType(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Type</label>
+                                </div>
+                                <div className="input-data">
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setPublisher(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Journal/Conference</label>
+                                </div>
                             </div>
-                            <div className="input-data">
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setType(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Type</label>
+                            <div className='form-row'>
+                                <div className="input-data">
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setLink(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Link</label>
+                                </div>
                             </div>
-                            <div className="input-data">
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setPublisher(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Journal/Conference</label>
+                            <div className='form-row'>
+                                <div className="input-data">
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setAuthors(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Authors</label>
+                                </div>
                             </div>
-                        </div>
-                        <div className='form-row'>
-                            <div className="input-data">
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setLink(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Link</label>
+                            <div className='form-row'>
+                                <div className="input-data">
+                                    <input type="text" placeholder=''
+                                        onChange={(e) => setMemberIds(e.target.value)} />
+                                    <div className="underline"></div>
+                                    <label>Member IDs</label>
+                                </div>
                             </div>
-                        </div>
-                        <div className='form-row'>
-                            <div className="input-data">
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setAuthors(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Authors</label>
+                            <div className='submit-row'>
+                                <button className='login-btn' type='submit'>Add</button>
                             </div>
-                        </div>
-                        <div className='form-row'>
-                            <div className="input-data">
-                                <input type="text" placeholder=''
-                                    onChange={(e) => setMemberIds(e.target.value)} />
-                                <div className="underline"></div>
-                                <label>Member IDs</label>
-                            </div>
-                        </div>
-                        <div className='submit-row'>
-                            <button className='login-btn' type='submit'>Add</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div className='publications-wrapper'>
-                {publications ? publications.map(publication =>
-                    <div className='publications-wrapper-item'>
-                        <Publication
-                            name={publication.name} authors={publication.authors} publisher={publication.publisher}
-                            link={publication.link} key={publication.link}
-                            admin={true} id={publication.id} publications={publications}
-                            setPublications={setPublications}></Publication>
+                        </form>
                     </div>
-                ) : null}
+                </div>
+                <div className='publications-wrapper'>
+                    {publications ? publications.map(publication =>
+                        <div className='publications-wrapper-item'>
+                            <Publication
+                                name={publication.name} authors={publication.authors} publisher={publication.publisher}
+                                link={publication.link} key={publication.link}
+                                admin={true} id={publication.id} publications={publications}
+                                setPublications={setPublications}></Publication>
+                        </div>
+                    ) : null}
+                </div>
             </div>
         </div>
     )
