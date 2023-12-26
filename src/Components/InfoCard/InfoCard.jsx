@@ -17,7 +17,7 @@ export const InfoCard = ({ id, imgPath, title, content, icons, memberDetails, se
       <div className="card-main">
          <img src={imgPath} alt="" loading="lazy" />
          <div className="card-text">
-            <h4>{title}</h4>
+            <h4 style={{ color: 'lightskyblue' }}>{title}</h4>
             <p>{content}</p>
          </div>
          {icons ?

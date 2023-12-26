@@ -1,18 +1,32 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
     <div className="header-main">
       <h1 className="app-title">HCI@NITT</h1>
       <div className="headings">
-        <Link to="/">Home</Link>
-        <Link to="/members">Members</Link>
-        <Link to="/research">Research</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/publications">Publications</Link>
-        <Link to="/collaborate">Collaborate</Link>
-        <Link to="/contact">Contact Us</Link>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/">Home</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/members">Members</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/research">Research</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/projects">Projects</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/publications">Publications</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/collaborate">Collaborate</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
+        } to="/contact">Contact Us</NavLink>
       </div>
     </div>
   );

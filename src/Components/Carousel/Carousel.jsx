@@ -38,7 +38,7 @@ const Carousel = () => {
             <div className="overlay">
                 {/* <h2>Welcome to</h2> */}
                 <h1>Human-Computer Interface Lab</h1>
-                <h1>@National Institute of Technology, Tiruchirappalli</h1>
+                <h1 style={{ color: 'lightskyblue' }}>@National Institute of Technology, Tiruchirappalli</h1>
             </div>
 
             <BsArrowRightCircleFill

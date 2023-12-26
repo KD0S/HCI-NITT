@@ -39,6 +39,11 @@
 } */
 
 .headings>a:hover {
-    font-size: larger;
-    transition: font-size 0.4s;
+    color: lightskyblue;
+    transition: 250ms ease-in-out;
+}
+
+.headings .active {
+    scale: 1.2;
+    color: rgb(103, 131, 232);
 }

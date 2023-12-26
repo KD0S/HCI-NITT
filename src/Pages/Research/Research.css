@@ -1,0 +1,53 @@
+.research-content-body {
+    padding: 1em 1.5em 4em 1.5em;
+    font: normal 300 20px "Kanit", sans-serif;
+    background-color: #f9f7f1;
+}
+
+.research-content-title {
+    font: normal 600 6em "Kanit", sans-serif;
+    padding-left: 0.3em;
+    border-bottom: 3px solid #012153;
+    color: #012153;
+    display: flex;
+}
+
+.research-content-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+    color: rgb(103, 131, 232);
+}
+
+.research-content-body div {
+    padding: 1em;
+}
+
+.research-content-body li {
+    padding: 0.3em;
+    margin-left: 1em;
+}
+
+.research-content-body ul {
+    list-style: none;
+}
+
+.research-content-body li::before {
+    content: "•";
+    color: rgb(103, 131, 232);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+.research-content-body a :hover {
+    color: #012153;
+    scale: 1.1;
+    transition: 200ms ease-in-out;
+}
+
+.research-content-body strong,
+.research-content-body h2 {
+    color: rgb(103, 131, 232);
+}

@@ -10,7 +10,8 @@
 }
 
 .members-heading {
-    font: normal 600 3em "Kanit", sans-serif;
+    font: normal 600 3.2em "Kanit", sans-serif;
     text-align: center;
     margin-top: 1em;
+    color: rgb(30, 54, 126);
 }
