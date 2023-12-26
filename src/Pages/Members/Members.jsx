@@ -18,8 +18,8 @@ const Members = () => {
 
     useEffect(() => {
         if (memberDetails) {
-            setInvestigatorDetails(memberDetails.filter(member => member.role === 'Research Investigator'))
-            setScholarDetails(memberDetails.filter(member => member.role === 'Research Scholar'))
+            setInvestigatorDetails(memberDetails.filter(member => member.role === 'investigator'))
+            setScholarDetails(memberDetails.filter(member => member.role === 'scholar'))
         }
     }, [memberDetails])
 
