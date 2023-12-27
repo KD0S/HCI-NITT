@@ -4,7 +4,15 @@ import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <div className="header-main">
-      <h1 className="app-title">HCI@NITT</h1>
+      <NavLink style={
+        {
+          textDecoration: 'none'
+        }
+      } className={({ isActive }) =>
+        isActive ? "active" : ""
+      } to="/admin/login">
+        <h1 className="app-title">HCI@NITT</h1>
+      </NavLink>
       <div className="headings">
         <NavLink className={({ isActive }) =>
           isActive ? "active" : ""
