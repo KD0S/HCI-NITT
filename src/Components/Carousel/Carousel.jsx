@@ -33,7 +33,7 @@ const Carousel = () => {
       </div>
 
       <div className="overlay">
-        <h2>Welcome to</h2>
+        {/* <h2>Welcome to</h2> */}
         <h1>Human-Computer Interface Lab</h1>
         <h1 style={{ color: "#6783e8" }}>
           @National Institute of Technology, Tiruchirappalli
