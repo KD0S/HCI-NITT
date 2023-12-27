@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const baseUrl = 'http://localhost:3001/api/publications'
+const baseUrl = 'https://hci-backend-94fk.onrender.com/api/publications'
 
 const getAll = async () => {
     const response = await axios.get(baseUrl)
