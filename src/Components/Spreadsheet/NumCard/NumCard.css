@@ -1,10 +1,10 @@
 .numcard-main {
   display: flex;
   align-items: center;
-  color: white;
+  color: #ffffff;
   border-radius: 50px;
-  background: linear-gradient(145deg, #011e4b, #012359);
-  box-shadow: 6px 6px 3px #011534, -6px -6px 3px #012d72;
+  background: linear-gradient(145deg, #242424, #011455);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
 }
 
 .numcard-context {
@@ -23,23 +23,28 @@
 }
 
 .numcard-context-name {
-  font: normal 400 2rem "Kanit", sans-serif;
+  font: normal 300 2rem "Roboto", sans-serif;
+}
+
+.numcard-context-name {
+  font: normal 300 2rem "Roboto", sans-serif;
 }
 
 .numcard-divider {
   width: 3px;
   height: 69%;
-  background: white;
+  background: #5c7c89;
   border-radius: 100%;
 }
+
 
 .numcard-count {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: normal 400 3rem "Kanit", sans-serif;
+  font: normal 900 4rem "Roboto", sans-serif;
   padding: 2rem 2rem;
-  color: lightskyblue;
+  color: #92d8e7;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }

@@ -1,5 +1,5 @@
 .research-main {
-  background-color: #f9f7f1;
+  background-color: #ffffff;
 }
 
 .research-content-header {
@@ -7,18 +7,18 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  color: #012153;
+  color: #242424;
   padding: 1rem;
   padding-bottom: 0;
 }
 
-.research-content-header > h1 {
-  font: normal 600 7rem "Kanit", sans-serif;
+.research-content-header>h1 {
+  font: normal 900 6rem "Roboto", sans-serif;
 }
 
 .research-content-icon {
-  font-size: 6rem;
-  color: rgb(103, 131, 232);
+  font-size: 7rem;
+  color: #011455;
 }
 
 .research-content-body {
@@ -31,8 +31,8 @@
 }
 
 .research-content-body-list-title {
-  color: rgb(103, 131, 232);
-  font: normal 500 3rem "Kanit", sans-serif;
+  color: #1f4959;
+  font: normal 400 3.5rem "Roboto", sans-serif;
 }
 
 .research-content-body-list {
@@ -40,23 +40,25 @@
   list-style: none;
 }
 
-.research-content-body-list > li {
+.research-content-body-list>li {
   padding: 0.25rem;
-  font: normal 300 1.3rem "Kanit", sans-serif;
+  font: normal 300 1.2rem "Roboto", sans-serif;
 }
 
-.research-content-body-list > li::before {
-  content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  background: rgb(103, 131, 232);
-  display: inline-block; /* Needed to add space between the bullet and the text */
+.research-content-body-list>li::before {
+  content: "";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background: #011455;
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 100%;
-  margin-right: 0.6rem; /* Also needed for space (tweak if needed) */
+  margin-right: 0.6rem;
+  /* Also needed for space (tweak if needed) */
 }
 
 .research-content-body-list a {
-  color: rgb(103, 131, 232);
   text-decoration: none;
 }
 

@@ -7,16 +7,11 @@
 .publication-container {
     display: flex;
     justify-content: center;
-    background: linear-gradient(112.1deg, rgb(47, 53, 71) 20.2%, rgb(30, 54, 126) 71.4%);
-    width: 55vw;
-    padding: 1em;
-    border-radius: 20px;
 }
 
 .publication-container>ul {
-    width: 50vw;
-    color: white;
-    padding: 1em;
+    color: rgb(77, 68, 68);
+    width: 90%;
 }
 
 .publication-container strong {
@@ -29,9 +24,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: lightskyblue;
 }
 
 .publication-container>a:hover {
-    color: lightskyblue;
+    color: rgb(42, 42, 180);
     transition: 100ms ease-in-out;
 }

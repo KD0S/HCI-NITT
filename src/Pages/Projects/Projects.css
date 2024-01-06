@@ -1,15 +1,15 @@
 .projects-content-body {
-    font: normal 600 2em "Kanit", sans-serif;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 .projects-content-body h2 {
-    color: #012153;
+    color: #242424;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font: normal 300 3.5rem "Roboto", sans-serif;
 }
 
 .projects-content {
@@ -18,9 +18,9 @@
 }
 
 .projects-icon {
-    font-size: 4em;
+    font-size: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: rgb(103, 131, 232);
+    color: #5c7c89;
 }

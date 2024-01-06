@@ -1,7 +1,7 @@
 .footer-main {
   width: 100%;
   padding: 0rem 4rem;
-  background: #012153;
+  background: #242424;
 }
 
 .footer-items {
@@ -14,12 +14,13 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: 2rem 0;
+  font-weight: 300;
   color: white;
 }
 
 .footer-item-title {
-  font: normal 500 2rem "Kanit", sans-serif;
-  color: rgb(103, 131, 232);
+  font: normal 700 2rem "Roboto", sans-serif;
+  color: #92d8e7;
 }
 
 .footer-address-detail {
@@ -29,6 +30,7 @@
 .footer-address-icon {
   margin-right: 0.4rem;
   font-size: 1rem;
+  color: #5c7c89;
 }
 
 .footer-address-detail>a {

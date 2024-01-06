@@ -4,12 +4,13 @@
   align-items: center;
   padding: 3rem 10rem;
   gap: 1rem;
-  background-color: #012153;
+  background-color: #1f4959;
   color: white;
 }
 
 .contact-opening-title {
-  font: normal 600 6rem "Kanit", sans-serif;
+  font: normal 900 6rem "Roboto", sans-serif;
+  color: #242424;
 }
 
 .contact-details-container {
@@ -24,22 +25,24 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  font: normal 300 1.1rem "Kanit", sans-serif;
+  font: normal 300 1.1rem "Roboto", sans-serif;
 }
 
 .contact-detail-icon {
   font-size: 6rem;
   padding: 1.3rem;
   border-radius: 100%;
-  background: linear-gradient(145deg, #011e4b, #012359);
-  box-shadow: 16px 16px 32px #01317a, -16px -16px 32px #01317a;
+  background: linear-gradient(145deg, #242424, #1f4959);
+  box-shadow: 10px 10px 20px #5c7c89, -10px -10px 20px #5c7c89;
 }
 
 .contact-detail-text {
   text-align: center;
+  color: #92d8e7;
 }
+
 
 .contact-opening-body {
   text-align: justify;
-  font: normal 300 1.1rem "Kanit", sans-serif;
+  font: normal 300 1.15rem "Roboto", sans-serif;
 }

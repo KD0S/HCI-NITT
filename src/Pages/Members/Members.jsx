@@ -26,35 +26,38 @@ const Members = () => {
     return (
         <div>
             <Header></Header>
-            <h1 className='members-heading'>Research Investigators</h1>
-            {investigatorDetails ? <div className='members'>
-                {investigatorDetails.map((member) =>
-                    <InfoCard
-                        key={member.name}
-                        imgPath={member.imgPath}
-                        title={member.name}
-                        content={member.designation}
-                        icons={{
-                            linkedin: member.linkedin, mail: member.mail, gscholar: member.gscholar,
-                            github: member.github, number: member.github
-                        }}>
-                    </InfoCard>
-                )}
-            </div> : null}
-            <h1 className='members-heading'>Research Scholars</h1>
-            {scholarDetails ? <div className='members'>
-                {scholarDetails.map((member) =>
-                    <InfoCard className='member'
-                        key={member.name}
-                        imgPath={member.imgPath}
-                        title={member.name}
-                        content={member.designation}
-                        icons={{
-                            linkedin: member.linkedin, mail: member.mail, gscholar: member.gscholar,
-                            github: member.github, number: member.github
-                        }}></InfoCard>
-                )}
-            </div> : null}
+            <div className='members-container'>
+                <h1 className='members-title'>Meet our Team</h1>
+                <h1 className='members-heading'>Research Investigators</h1>
+                {investigatorDetails ? <div className='members'>
+                    {investigatorDetails.map((member) =>
+                        <InfoCard
+                            key={member.name}
+                            imgPath={member.imgPath}
+                            title={member.name}
+                            content={member.designation}
+                            icons={{
+                                linkedin: member.linkedin, mail: member.mail, gscholar: member.gscholar,
+                                github: member.github, number: member.github
+                            }}>
+                        </InfoCard>
+                    )}
+                </div> : null}
+                <h1 className='members-heading'>Research Scholars</h1>
+                {scholarDetails ? <div className='members'>
+                    {scholarDetails.map((member) =>
+                        <InfoCard className='member'
+                            key={member.name}
+                            imgPath={member.imgPath}
+                            title={member.name}
+                            content={member.designation}
+                            icons={{
+                                linkedin: member.linkedin, mail: member.mail, gscholar: member.gscholar,
+                                github: member.github, number: member.github
+                            }}></InfoCard>
+                    )}
+                </div> : null}
+            </div>
             <Footer></Footer>
         </div>
     )

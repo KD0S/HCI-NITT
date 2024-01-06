@@ -11,7 +11,7 @@ export const Header = () => {
       } className={({ isActive }) =>
         isActive ? "active" : ""
       } to="/admin/login">
-        <h1 className="app-title">HCI@NITT</h1>
+        <h1 className="app-title">HCI<strong style={{ color: '#5c7c89' }}>@</strong>NITT</h1>
       </NavLink>
       <div className="headings">
         <NavLink className={({ isActive }) =>

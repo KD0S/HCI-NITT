@@ -4,30 +4,30 @@
   align-items: center;
   padding: 3rem 10rem;
   gap: 1rem;
-  background-color: #012153;
+  background-color: #1f4959;
   color: white;
 }
 
 .collab-opening-title {
-  font: normal 600 6rem "Kanit", sans-serif;
+  font: normal 900 6rem "Roboto", sans-serif;
+  color: #242424;
 }
 
 .collab-opening-body {
   text-align: justify;
-  font: normal 300 1.15rem "Kanit", sans-serif;
+  font: normal 300 1.15rem "Roboto", sans-serif;
 }
 
-.collab-opening-body > a {
+.collab-opening-body>a {
   text-decoration: none;
 }
 
-.collab-opening-body > a:hover {
+.collab-opening-body>a:hover {
   color: lightskyblue;
 }
 
 .collab-content {
   padding: 1.5rem 2.5rem;
-  background-color: #f9f7f1;
 }
 
 .collab-content-list-container {
@@ -35,8 +35,8 @@
 }
 
 .collab-content-list-title {
-  color: rgb(103, 131, 232);
-  font: normal 500 3rem "Kanit", sans-serif;
+  color: #1f4959;
+  font: normal 400 3.5rem "Roboto", sans-serif;
 }
 
 .collab-content-list {
@@ -44,23 +44,27 @@
   list-style: none;
 }
 
-.collab-content-list > li {
+.collab-content-list>li {
   padding: 0.25rem;
-  font: normal 300 1.3rem "Kanit", sans-serif;
+  font: normal 300 1.3rem "Roboto", sans-serif;
 }
 
-.collab-content-list > li::before {
-  content: ""; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  background: rgb(103, 131, 232);
-  display: inline-block; /* Needed to add space between the bullet and the text */
+.collab-content-list>li::before {
+  content: "";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background: #011455;
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 100%;
-  margin-right: 0.6rem; /* Also needed for space (tweak if needed) */
+  margin-right: 0.6rem;
+  /* Also needed for space (tweak if needed) */
 }
 
 .collab-content-list a {
-  color: rgb(103, 131, 232);
+  color: #1f4959;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -69,7 +73,7 @@
   transition: color 200ms ease-in-out;
 }
 
-.collab-content > p {
+.collab-content>p {
   padding: 1rem;
-  font: normal 300 1.3rem "Kanit", sans-serif;
+  font: normal 400 1.3rem "Roboto", sans-serif;
 }

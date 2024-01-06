@@ -4,14 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #001233;
-    /* position: sticky; */
+    background: #011425;
 }
 
 .app-title {
-    color: white;
+    color: #f1f1f2;
     margin-left: 2.5rem;
-    font: normal 600 2rem "Kanit", sans-serif;
+    font: normal 900 2.5rem "Roboto", sans-serif;
 }
 
 .headings {
@@ -24,18 +23,19 @@
 
 /* styling Link tags */
 .headings>a {
-    color: white;
+    color: #f1f1f2;
     text-decoration: none;
-    font: normal 500 1.1rem "Kanit", sans-serif;
+    font: normal 500 1.1rem "Roboto", sans-serif;
 }
 
 .headings>a:hover {
-    color: lightskyblue;
+    color: #00bbd6;
     transition: 250ms ease-in-out;
 }
 
 .headings .active {
     scale: 1.2;
-    color: rgb(103, 131, 232);
+    font-weight: 700;
+    color: #00bbd6;
     transition: 300ms ease-in-out;
 }

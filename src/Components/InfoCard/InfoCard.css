@@ -9,7 +9,7 @@
    perspective: none;
    transition: 0.3s;
    border-radius: 32px;
-   background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%);
+   background: linear-gradient(130.1deg, #1f4959 11.4%, #011455 70.2%);
 }
 
 .card-main:hover {
@@ -21,11 +21,12 @@
    width: 150px;
    border-radius: 50%;
    background-color: white;
+   border: solid #ffffff 5px;
 }
 
 .card-text {
    width: 100%;
-   color: white;
+   color: #92d8e7;
    padding: 20px;
 
    display: flex;
@@ -41,13 +42,13 @@
 .card-text>h4 {
    margin: 0px;
    /* removing default h4 margin */
-   font: 800 1.05rem "Poppins", sans-serif;
+   font: 900 1.3rem "Roboto", sans-serif;
 }
 
 .card-text>p {
    margin: 0px;
    /* removing default p margin */
-   font: 400 0.9rem "Poppins", sans-serif;
+   font: 300 1.1rem "Roboto", sans-serif;
 }
 
 .icons {

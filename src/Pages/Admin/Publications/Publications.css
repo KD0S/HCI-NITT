@@ -3,6 +3,10 @@
     justify-content: center;
 }
 
+.publications-wrapper {
+    width: 70vw;
+}
+
 .admin-publication-body {
     display: flex;
 }

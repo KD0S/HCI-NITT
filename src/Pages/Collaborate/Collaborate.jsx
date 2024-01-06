@@ -7,7 +7,7 @@ const Collaborate = () => {
     <div>
       <Header></Header>
       <div className="collab-opening">
-        <h1 className="collab-opening-title">INTERESTED? JOIN US</h1>
+        <h1 className="collab-opening-title">INTERESTED? <strong style={{ fontWeight: 900, color: '#5c7c89' }}>JOIN US</strong></h1>
         <p className="collab-opening-body">
           The HCI@NITT lab is always looking for researchers at UG, PG, RA, and
           Ph.D. levels. Please see below to check the list of currently open

@@ -30,21 +30,25 @@ export const Publications = () => {
     return (
         <div>
             <Header></Header>
+            <h1 className='members-title' style={{ padding: '0.4em' }}>Our Publications</h1>
             <div className='publications-wrapper'>
                 <div className='heading-wrapper'>
-                    <h1>Peer-Reviewed Journals</h1>
-                    {journals ? journals.map(journal => <Publication
-                        name={journal.name} authors={journal.authors}
-                        publisher={journal.publisher} link={journal.link} key={journal.link}></Publication>) : null}
+                    <h1 className='publications-heading'>Peer-Reviewed Journals</h1>
+                    <div style={{ padding: '1em' }}>
+                        {journals ? journals.map(journal => <Publication
+                            name={journal.name} authors={journal.authors}
+                            publisher={journal.publisher} link={journal.link} key={journal.link}></Publication>) : null}</div>
                 </div>
                 <div className='heading-wrapper'>
-                    <h1>Peer-Reviewed Conferences</h1>
-                    {conferences ? conferences.map(conference => <Publication
-                        name={conference.name} authors={conference.authors}
-                        publisher={conference.publisher} link={conference.link} key={conference.link}></Publication>) : null}
+                    <h1 className='publications-heading'>Peer-Reviewed Conferences</h1>
+                    <div style={{ padding: '1em' }}>
+                        {conferences ? conferences.map(conference => <Publication
+                            name={conference.name} authors={conference.authors}
+                            publisher={conference.publisher} link={conference.link} key={conference.link}></Publication>) : null}
+                    </div>
                 </div>
             </div>
             <Footer></Footer>
-        </div>
+        </div >
     )
 }
