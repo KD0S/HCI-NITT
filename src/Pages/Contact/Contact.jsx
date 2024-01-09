@@ -7,12 +7,14 @@ import Footer from "../../Components/Footer/Footer";
 
 const Contact = () => {
   return (
-    <div className="contact-main">
+    <div>
       <Header></Header>
-      <ContactDetails />
-      <div className="form-map-container">
-        <ContactForm />
-        <Map />
+      <div className="contact-main-body">
+        <ContactDetails />
+        <div className="form-map-container">
+          <ContactForm />
+          <Map />
+        </div>
       </div>
       <Footer></Footer>
     </div>
