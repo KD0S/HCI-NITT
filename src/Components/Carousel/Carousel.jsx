@@ -6,6 +6,10 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
+  setTimeout(() => {
+    nextSlide()
+  }, 10000)
+
   const nextSlide = () => {
     setSlide((slide + 1) % imgSlides.length);
   };
@@ -34,8 +38,8 @@ const Carousel = () => {
 
       <div className="overlay">
         {/* <h2>Welcome to</h2> */}
-        <h1>Human-Computer Interface Lab</h1>
-        <h1 style={{ color: "#ffffff", fontWeight: 900 }}>
+        <h1 className="overlay-heading">Human-Computer Interface Lab</h1>
+        <h1 className="overlay-heading bolder">
           @National Institute of Technology, Tiruchirappalli
         </h1>
       </div>

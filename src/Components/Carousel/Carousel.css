@@ -26,7 +26,7 @@
     /* object-fit: cover; */
     /* flex-shrink: 0; */
     /* flex-grow: 0; */
-    transition: translate 600ms ease-in-out;
+    transition: translate 700ms ease-in-out;
 }
 
 .overlay {
@@ -36,7 +36,6 @@
     background: rgba(0, 0, 0, 0.7);
     color: #92d8e7;
     z-index: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -44,11 +43,17 @@
 }
 
 
-.overlay>h1 {
+.overlay-heading {
     font-size: 3.5rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     padding: 0px;
+    /* animation: slideInLeft 1.3s ease-in-out 0s 1 normal both; */
+}
+
+.bolder {
+    font-weight: 900;
+    /* animation: highlight-heading 1.3s ease-in-out 1s 1 normal both; */
 }
 
 .arrow {

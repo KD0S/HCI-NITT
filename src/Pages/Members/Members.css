@@ -6,18 +6,112 @@
     flex-wrap: wrap;
     gap: 2em;
     padding: 1em;
-    margin-bottom: 100px;
+    margin: 3rem;
+}
+
+.members-container {
+    min-height: 100vh;
+    animation: fadeIn 0.5s ease-in-out 0s 1 normal both;
 }
 
 .members-heading {
     text-align: center;
     font: normal 400 3.5rem "Roboto", sans-serif;
     color: #1f4959;
+    animation: fadeIn 2s ease-in-out 0s 1 normal both;
 }
 
-.members-title {
+.main-title {
     font: normal 900 6rem "Roboto", sans-serif;
     text-align: center;
     padding: 0.2em 0 0.2em 0;
     color: #242424;
+    animation: slideInLeft 1s ease-in-out 0s 1 normal both;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.loader-container {
+    height: 100vh;
+}
+
+.loader {
+    width: 65px;
+    scale: 1.5;
+    aspect-ratio: 1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px inset #1f4959;
+    animation: l4 2.5s infinite;
+}
+
+.loader:after {
+    animation-delay: -1.25s;
+}
+
+@keyframes l4 {
+    0% {
+        inset: 0 35px 35px 0;
+    }
+
+    12.5% {
+        inset: 0 35px 0 0;
+    }
+
+    25% {
+        inset: 35px 35px 0 0;
+    }
+
+    37.5% {
+        inset: 35px 0 0 0;
+    }
+
+    50% {
+        inset: 35px 0 0 35px;
+    }
+
+    62.5% {
+        inset: 0 0 0 35px;
+    }
+
+    75% {
+        inset: 0 0 35px 35px;
+    }
+
+    87.5% {
+        inset: 0 0 35px 0;
+    }
+
+    100% {
+        inset: 0 35px 35px 0;
+    }
 }

@@ -10,13 +10,15 @@
 }
 
 .publication-container>ul {
-    color: rgb(77, 68, 68);
+    color: #242424;
+    font-weight: 300;
     width: 90%;
 }
 
 .publication-container strong {
     font-style: italic;
-    color: lightskyblue;
+    font-weight: 700;
+    color: #1f4959;
 }
 
 .publication-container>a {
@@ -24,10 +26,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: lightskyblue;
+    color: #5c7c89;
 }
 
 .publication-container>a:hover {
-    color: rgb(42, 42, 180);
+    color: #1f4959;
     transition: 100ms ease-in-out;
 }
