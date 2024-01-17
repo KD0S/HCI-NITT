@@ -9,7 +9,7 @@
   display: flex;
   gap: 8rem;
   height: 100vh;
-  background-color: #92d8e7;
+  background-color: #242424;
 }
 
 .about-img-column {
@@ -38,7 +38,7 @@
 
 .about-content {
   display: flex;
-  color: #1f4959;
+  color: #5c7c89;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .about-content-body strong {
-  color: #011455;
+  color: #92d8e7;
   font-weight: 400;
 }
 
@@ -62,7 +62,7 @@
 
 .about-content-title {
   font: normal 900 6rem "Roboto", sans-serif;
-  color: #ffffff;
+  color: #f1f1f2;
   text-align: start;
   width: 100%;
   animation: slideInLeft 500ms ease-in-out 0s 1 normal both;
@@ -70,7 +70,7 @@
 
 .about-content-body {
   text-align: justify;
-  font: normal 300 1.05rem "Roboto", sans-serif;
+  font: normal 300 1.1rem "Roboto", sans-serif;
 }
 
 @keyframes fade-in {

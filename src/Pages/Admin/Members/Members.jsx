@@ -39,7 +39,7 @@ const MembersAdmin = () => {
             address: address,
             mail: mail,
             number: number,
-            imgPath: imgPath,
+            imgPath: 'https://lh3.googleusercontent.com/d/' + imgPath,
             linkedin: linkedIn,
             gscholar: gScholar,
             github: github,
@@ -137,7 +137,7 @@ const MembersAdmin = () => {
                                     <input type="text" placeholder=''
                                         onChange={(e) => setImgPath(e.target.value)} />
                                     <div className="underline"></div>
-                                    <label>Image Path</label>
+                                    <label>Image ID</label>
                                 </div>
                             </div>
                             <div className='submit-row'>
