@@ -3,8 +3,9 @@
     justify-content: center;
 }
 
-.publications-wrapper {
-    width: 70%;
+.admin-publications-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .admin-publication-body {

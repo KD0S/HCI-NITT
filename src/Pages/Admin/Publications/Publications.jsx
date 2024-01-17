@@ -123,7 +123,7 @@ const PublicationsAdmin = () => {
                         </form>
                     </div>
                 </div>
-                <div className='publications-wrapper'>
+                <div className='admin-publications-wrapper'>
                     {publications ? publications.map(publication =>
                         <div className='publications-wrapper-item'>
                             <Publication
