@@ -30,7 +30,7 @@ export const Publications = () => {
 
 
     return (
-        <div>
+        <div className='publications-main-body'>
             <Header></Header>
             <div>{isLoading ? <div className='loader-container'>
                 <div className='loader'></div></div> : <div>
