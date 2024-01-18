@@ -1,5 +1,6 @@
 .header-main {
     height: 8vh;
+    max-height: 8vh;
     /* remaining space is filled by carousel in homepage */
     display: flex;
     justify-content: space-between;
@@ -15,11 +16,11 @@
 
 .headings {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 2em;
     margin-right: 2.5rem;
 }
+
 
 /* styling Link tags */
 .headings>a {
@@ -28,7 +29,7 @@
     font: normal 500 1.1rem "Roboto", sans-serif;
 }
 
-.headings>a:hover {
+.headerings>a:hover {
     color: #00bbd6;
     transition: 250ms ease-in-out;
 }

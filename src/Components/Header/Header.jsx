@@ -36,6 +36,7 @@ export const Header = () => {
           isActive ? "active" : ""
         } to="/contact">Contact Us</NavLink>
       </div>
+
     </div>
   );
 };
