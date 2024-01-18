@@ -2,13 +2,14 @@ import "./Carousel.css";
 import React, { useState } from "react";
 import { imgSlides } from "./ImgSlides";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { AttentionSeeker, Slide } from "react-awesome-reveal";
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
   setTimeout(() => {
-    nextSlide()
-  }, 10000)
+    nextSlide();
+  }, 10000);
 
   const nextSlide = () => {
     setSlide((slide + 1) % imgSlides.length);
@@ -37,11 +38,16 @@ const Carousel = () => {
       </div>
 
       <div className="overlay">
-        {/* <h2>Welcome to</h2> */}
-        <h1 className="overlay-heading">Human-Computer Interface Lab</h1>
-        <h1 className="overlay-heading bolder">
-          @National Institute of Technology, Tiruchirappalli
-        </h1>
+        <AttentionSeeker effect="jello" duration={1000} triggerOnce>
+          <Slide direction="up" triggerOnce>
+            <h1 className="overlay-heading-line1">
+              Human-Computer Interface Lab
+            </h1>
+            <h1 className="overlay-heading-line2">
+              @National Institute of Technology, Tiruchirappalli
+            </h1>
+          </Slide>
+        </AttentionSeeker>
       </div>
 
       <IoIosArrowForward className="arrow arrow-right" onClick={nextSlide} />

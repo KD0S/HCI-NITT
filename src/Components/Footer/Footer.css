@@ -1,6 +1,7 @@
 .footer-main {
   width: 100%;
   padding: 0rem 4rem;
+  padding-top: 1rem;
   background: #242424;
 }
 
@@ -12,7 +13,7 @@
 .footer-item {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
   padding: 2rem 0;
   font-weight: 300;
   color: white;
@@ -50,10 +51,8 @@
 }
 
 .footer-tag {
-  /* width: 50%; */
   color: white;
   text-align: center;
-  /* padding: 2rem 0rem; */
   padding: 1rem 0;
   border-top: 1px solid white;
 }
