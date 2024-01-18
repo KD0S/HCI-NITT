@@ -1,10 +1,10 @@
 .numcard-main {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #f1f1f2;
   border-radius: 50px;
-  background: linear-gradient(145deg, #242424, #011455);
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
+  background: linear-gradient(145deg, #272727, #202020);
+  box-shadow: 6px 6px 9px #151515, -6px -6px 9px #333333;
 }
 
 .numcard-context {
@@ -13,9 +13,6 @@
   align-items: center;
   gap: 0.5rem;
   padding: 2rem 2.5rem;
-
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
 }
 
 .numcard-context-icon {
@@ -23,20 +20,15 @@
 }
 
 .numcard-context-name {
-  font: normal 300 2rem "Roboto", sans-serif;
-}
-
-.numcard-context-name {
-  font: normal 300 2rem "Roboto", sans-serif;
+  font: normal 400 2rem "Roboto", sans-serif;
 }
 
 .numcard-divider {
   width: 3px;
   height: 69%;
-  background: #5c7c89;
+  background: #92d8e7;
   border-radius: 100%;
 }
-
 
 .numcard-count {
   display: flex;
@@ -45,6 +37,4 @@
   font: normal 900 4rem "Roboto", sans-serif;
   padding: 2rem 2rem;
   color: #92d8e7;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
 }
