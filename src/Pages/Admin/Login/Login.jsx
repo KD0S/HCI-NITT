@@ -54,15 +54,16 @@ function Login() {
                 'sec-ch-ua-platform': '"Linux"',
             },
             data
-        }).then((res) => console.log(res))
-
-        if (username === 'admin' && password === 'password')
-            navigate("/admin/dashboard", { replace: true })
-        else
-            setError(true)
-        setTimeout(() => {
-            setError(false)
-        }, 3000)
+        }).then((res) => {
+            if (res.url === 'https://students.nitt.edu/horde/login.php') {
+                setError(true)
+                setTimeout(() => {
+                    setError(false)
+                }, 3000)
+            }
+            else
+                navigate("/admin/dashboard", { replace: true })
+        })
     }
 
     return (
