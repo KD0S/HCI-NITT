@@ -10,6 +10,9 @@ export const AdminHeader = () => {
         } to="/admin/dashboard">Dashboard</NavLink>
         <NavLink className={({ isActive }) =>
           isActive ? "active" : ""
+        } to="/admin/admins">Admins</NavLink>
+        <NavLink className={({ isActive }) =>
+          isActive ? "active" : ""
         } to="/admin/members">Members</NavLink>
         <NavLink className={({ isActive }) =>
           isActive ? "active" : ""

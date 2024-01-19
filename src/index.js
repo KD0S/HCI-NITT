@@ -16,6 +16,7 @@ import { Publications } from './Pages/Publications/Publications';
 import Research from './Pages/Research/Research';
 import Collaborate from './Pages/Collaborate/Collaborate';
 import Projects from './Pages/Projects/Projects';
+import Admins from './Pages/Admin/Admins/Admins';
 
 
 
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/publications",
     element: <PublicationsAdmin></PublicationsAdmin>
+  },
+  {
+    path: "/admin/admins",
+    element: <Admins></Admins>
   }
 ])
 
