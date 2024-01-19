@@ -2,7 +2,7 @@ import "./Carousel.css";
 import React, { useState } from "react";
 import { imgSlides } from "./ImgSlides";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { AttentionSeeker, Slide } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
@@ -38,16 +38,16 @@ const Carousel = () => {
       </div>
 
       <div className="overlay">
-        <AttentionSeeker effect="jello" duration={1000} triggerOnce>
-          <Slide direction="up" triggerOnce>
+        <Zoom triggerOnce>
+          <div>
             <h1 className="overlay-heading-line1">
               Human-Computer Interface Lab
             </h1>
             <h1 className="overlay-heading-line2">
               @National Institute of Technology, Tiruchirappalli
             </h1>
-          </Slide>
-        </AttentionSeeker>
+          </div>
+        </Zoom >
       </div>
 
       <IoIosArrowForward className="arrow arrow-right" onClick={nextSlide} />

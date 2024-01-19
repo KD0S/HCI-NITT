@@ -20,7 +20,7 @@
   border: 0.75rem solid white;
 }
 
-.about-img-container > img {
+.about-img-container>img {
   width: 100%;
   height: 100%;
 }
@@ -37,6 +37,7 @@
 .about-content-title {
   font: normal 900 6rem "Roboto", sans-serif;
   text-align: center;
+  color: #5c7c89;
   width: 100%;
 }
 
@@ -45,17 +46,17 @@
   font: normal 300 1.1rem "Roboto", sans-serif;
 }
 
-.about-content-body > strong {
+.about-content-body>strong {
   color: #92d8e7;
   font-weight: 500;
 }
 
-.about-content-body > a {
+.about-content-body>a {
   text-decoration: none;
 }
 
-.about-content-body > a:hover {
-  color: #f1f1f2;
+.about-content-body>a:hover {
+  color: #5c7c89;
   scale: 1.1;
   transition: 200ms ease-in-out;
 }

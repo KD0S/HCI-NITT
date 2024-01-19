@@ -6,7 +6,7 @@ const Alert = ({ type, message }) => {
     return (
         <div className={`alert ${type}`} >
             <div className='alert-icon'>{type === 'success' ? <FaCircleCheck></FaCircleCheck> : <MdError></MdError>}</div>
-            {message}
+            <p className='alert-content'>{message}</p>
         </div >
     )
 }

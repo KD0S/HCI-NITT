@@ -1,6 +1,6 @@
 import "./AboutUs.css";
 import { imgSlides } from "../Carousel/ImgSlides";
-import { Bounce, Fade, Slide } from "react-awesome-reveal";
+import { Bounce, Slide } from "react-awesome-reveal";
 
 const AboutUs = () => {
   return (

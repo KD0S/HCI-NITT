@@ -1,6 +1,5 @@
 .header-main {
     height: 8vh;
-    max-height: 8vh;
     /* remaining space is filled by carousel in homepage */
     display: flex;
     justify-content: space-between;

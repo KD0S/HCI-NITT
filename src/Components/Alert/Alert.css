@@ -1,17 +1,24 @@
 .alert {
     width: 100vw;
-    padding: 1.3em;
+    padding: 1em;
     color: white;
-    font: bold;
     display: flex;
     gap: 10px;
+    position: absolute;
+    top: 0;
+    font: normal 300 1.3rem "Roboto", sans-serif;
+    animation: fadeIn 300ms ease-in-out 0s 1 normal both;
+}
+
+.alert-content {
+    margin-top: 0.3em;
 }
 
 .alert-icon {
-    font-size: 1.3em;
+    font-size: 2em;
 }
 
-.alert .error {
+.error {
     background-color: red;
 }
 
