@@ -2,6 +2,7 @@
     height: 100vh;
     width: 100vw;
     animation: fadeIn 0.5s ease-in-out 0s 1 normal both;
+    background-color: #f1f1f2;
 }
 
 .publications-heading {

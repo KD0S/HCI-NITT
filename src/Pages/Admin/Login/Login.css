@@ -6,10 +6,11 @@
 
 body {
     margin: 0px;
+    background-color: #f1f1f2;
 }
 
 .login-heading {
-    color: rgb(37, 37, 111);
+    color: #242424;
     font-size: 50px;
 }
 
@@ -32,8 +33,9 @@ body {
     height: min-content;
     /* dynamic height, changes as required */
     padding: 48px 24px;
-    border: 2px solid rgb(37, 37, 111);
+    border: 3px solid #242424;
     border-radius: 16px;
+    background-color: #f1f1f2;
 }
 
 .login-title,
@@ -59,20 +61,24 @@ body {
     top: 12px;
     left: 12px;
     font-size: 18px;
-    color: #4a4a4a;
+    color: #242424;
     transition: top 0.1s, font 0.1s, color 0.1s;
 }
 
 .login-input {
     padding: 12px 12px;
     font-size: 18px;
-    border: 2px solid #4285f4;
+    border: 2px solid #5c7c89;
     border-radius: 4px;
+}
+
+.login-input {
+    background-color: #f1f1f2;
 }
 
 .login-input:focus {
     outline: none;
-    border: 2px solid rgb(37, 37, 111);
+    border: 2px solid #011455;
 }
 
 /* when login-input is on focus, animate login-label */
@@ -80,8 +86,8 @@ body {
     top: -12px;
     font-size: 12px;
     padding: 4px;
-    background: white;
-    color: #4285f4;
+    background: #f1f1f2;
+    color: #5c7c89;
 }
 
 /* when user has entered something
@@ -90,7 +96,7 @@ in login-input, login-label must stay at top */
     top: -12px;
     font-size: 12px;
     padding: 4px;
-    background: white;
+    background: #f1f1f2;
     color: #4a4a4a;
 }
 
@@ -98,7 +104,7 @@ in login-input, login-label must stay at top */
     align-self: center;
     padding: 10px 16px;
     font-size: 16px;
-    background: #4285f4;
+    background: #5c7c89;
     color: #fff;
     border: 0px;
     border-radius: 6px;
@@ -106,12 +112,12 @@ in login-input, login-label must stay at top */
 }
 
 .login-btn:hover {
-    background: #0e53c3;
+    background: #1f4959;
     box-shadow: 0px 0px 1px #000;
 }
 
 .login-btn:focus {
-    outline: #0e53c3 solid 3px;
+    outline: #5c7c89 solid 3px;
 }
 
 .login-btn:disabled {

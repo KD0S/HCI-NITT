@@ -1,6 +1,6 @@
 import { IconContext } from "react-icons";
 import { IoIosArrowDropdown } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 
 export const Header = () => {
@@ -37,13 +37,13 @@ export const Header = () => {
           </IconContext.Provider>
           <ul className="heading-dropdown-content">
             <li>
-              <Link to="/research">Research</Link>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/research">Research</NavLink>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/projects">Projects</NavLink>
             </li>
             <li>
-              <Link to="/publications">Publications</Link>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/publications">Publications</NavLink>
             </li>
           </ul>
         </div>
@@ -54,10 +54,10 @@ export const Header = () => {
           </IconContext.Provider>
           <ul className="heading-dropdown-content">
             <li>
-              <Link to="/collaborate">Collaborate</Link>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/collaborate">Collaborate</NavLink>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/contact">Contact Us</NavLink>
             </li>
           </ul>
         </div>

@@ -5,7 +5,7 @@
     width: 60%;
     max-width: 25vw;
     justify-content: center;
-    background: #012153;
+    background: #011425;
     /* position: sticky; */
     /* background: linear-gradient(112.1deg, rgb(30, 54, 126) 11.4%, rgb(47, 53, 71) 70.2%); */
     /* border-bottom: 3px solid white; */
@@ -23,7 +23,7 @@
 
 /* styling Link tags */
 .sidebar-headings>a {
-    color: white;
+    color: #f1f1f2;
     width: auto;
     text-align: center;
     text-decoration: none;
@@ -39,15 +39,15 @@
 } */
 
 .sidebar-headings>a:hover {
-    color: lightskyblue;
-    transition: 250ms ease-in-out;
+    color: #92d8e7;
+    transition: 200ms ease-in-out;
 }
 
 
 .sidebar-headings .active {
     font-size: 1.6em;
-    background-color: white;
-    color: rgb(103, 131, 232);
+    background-color: #f1f1f2;
+    color: #011425;
     transition: 300ms ease-in-out;
     border-radius: 20px 0 0 20px;
 }
