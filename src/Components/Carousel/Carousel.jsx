@@ -7,10 +7,6 @@ import { Zoom } from "react-awesome-reveal";
 const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
-  setTimeout(() => {
-    nextSlide();
-  }, 10000);
-
   const nextSlide = () => {
     setSlide((slide + 1) % imgSlides.length);
   };

@@ -15,6 +15,9 @@ import Collaborate from "./Pages/Collaborate/Collaborate";
 import Projects from "./Pages/Projects/Projects";
 import Admins from "./Pages/Admin/Admins/Admins";
 import LatestNewsAdmin from "./Pages/Admin/LatestNews/LatestNews";
+import InternalResources from "./Pages/InternalResources/InternalResources";
+import ExternalResources from "./Pages/ExternalResources/ExternalResources";
+import Blogs from "./Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -69,6 +72,18 @@ const router = createBrowserRouter([
     path: "/admin/latestNews",
     element: <LatestNewsAdmin></LatestNewsAdmin>,
   },
+  {
+    path:"/internal-resources",
+    element: <InternalResources></InternalResources>
+  },
+  {
+    path:"/external-resources",
+    element: <ExternalResources></ExternalResources>
+  },
+  {
+    path:"/blogs",
+    element: <Blogs></Blogs>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

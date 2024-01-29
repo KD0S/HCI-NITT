@@ -1,0 +1,40 @@
+.img-placeholder {
+    height: 250px;
+    width: 250px;
+    background: linear-gradient(130.1deg, #1f4959 11.4%, #011455 70.2%);
+}
+
+.img-placeholder:hover {
+    scale: 1.1;
+    transition: all 300ms ease-in-out;
+}
+
+.blog-title {
+    color: #1f4959;
+    font: normal 700 2.5rem "Roboto", sans-serif;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.blog>p {
+    font: normal 300 1rem "Roboto", sans-serif;
+    overflow: hidden;
+    text-align: start;
+}
+
+.blog>a {
+    text-decoration: none;
+    color: #5c7c89;
+}
+
+.blog-title:hover {
+    color: #242424;
+}
+
+.blog>a:hover {
+    color: #1f4959;
+}
+
+.blog {
+    padding: 1.5rem;
+    max-width: 300px;
+}

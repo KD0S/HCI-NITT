@@ -17,7 +17,7 @@
   flex: 1 0 100%;
   position: relative;
   z-index: 0;
-  transition: translate 700ms ease-in-out;
+  transition: translate 800ms;
 }
 
 .overlay {

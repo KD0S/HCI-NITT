@@ -1,0 +1,60 @@
+.resources-main {
+    background-color: #f1f1f2;
+}
+
+.resources-content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #242424;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+
+.resources-content-body {
+    padding: 1.5rem 2.5rem;
+    padding-top: 0;
+}
+
+.resources-content-body-list-container {
+    padding: 1rem;
+}
+
+.resources-content-body-list-title {
+    color: #1f4959;
+    font: normal 400 3.5rem "Roboto", sans-serif;
+}
+
+.resources-content-body-list {
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+.resources-content-body-list>li {
+    padding: 0.25rem;
+    font: normal 300 1.2rem "Roboto", sans-serif;
+}
+
+.resources-content-body-list>li::before {
+    content: "";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    background: #011455;
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 100%;
+    margin-right: 0.6rem;
+    /* Also needed for space (tweak if needed) */
+}
+
+.resources-content-body-list a {
+    text-decoration: none;
+}
+
+.resources-content-body-list a:hover {
+    color: #012153;
+    transition: color 200ms ease-in-out;
+}

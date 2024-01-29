@@ -32,7 +32,7 @@ const Members = () => {
                 {isLoading ? <div className='loader-container'><div class="loader"></div></div> :
                     <div>
                         <h1 className='main-title'>Meet our Team</h1>
-                        <h1 className='members-heading'>Research Investigators</h1>
+                        <h1 className='sub-heading'>Research Investigators</h1>
                         {investigatorDetails ? <div className='members'>
                             {investigatorDetails.map((member) =>
                                 <InfoCard
@@ -47,7 +47,7 @@ const Members = () => {
                                 </InfoCard>
                             )}
                         </div> : null}
-                        <h1 className='members-heading'>Research Scholars</h1>
+                        <h1 className='sub-heading'>Research Scholars</h1>
                         {scholarDetails ? <div className='members'>
                             {scholarDetails.map((member) =>
                                 <InfoCard className='member'

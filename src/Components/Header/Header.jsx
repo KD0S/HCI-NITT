@@ -48,6 +48,23 @@ export const Header = () => {
           </ul>
         </div>
         <div className="heading-dropdown-main">
+          <p className="heading-dropdown-trigger">Resources</p>
+          <IconContext.Provider value={{ className: "heading-dropdown-icon" }}>
+            <IoIosArrowDropdown />
+          </IconContext.Provider>
+          <ul className="heading-dropdown-content">
+            <li>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/blogs">Blogs</NavLink>
+            </li>
+            <li>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/internal-resources">Internal Resources</NavLink>
+            </li>
+            <li>
+              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/external-resources">External Resources</NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="heading-dropdown-main">
           <p className="heading-dropdown-trigger">Let's Connect</p>
           <IconContext.Provider value={{ className: "heading-dropdown-icon" }}>
             <IoIosArrowDropdown />
