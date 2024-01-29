@@ -35,15 +35,14 @@
 }
 
 .about-content-title {
-  font: normal 900 6rem "Roboto", sans-serif;
-  text-align: center;
+  font: normal 900 4rem "Roboto", sans-serif;
   color: #5c7c89;
   width: 100%;
 }
 
 .about-content-body {
   text-align: justify;
-  font: normal 300 1.1rem "Roboto", sans-serif;
+  font: normal 300 1rem "Roboto", sans-serif;
 }
 
 .about-content-body>strong {

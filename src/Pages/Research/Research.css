@@ -13,7 +13,7 @@
 }
 
 .research-content-icon {
-  font-size: 7rem;
+  font-size: 5rem;
   color: #011455;
 }
 
@@ -28,7 +28,7 @@
 
 .research-content-body-list-title {
   color: #1f4959;
-  font: normal 400 3.5rem "Roboto", sans-serif;
+  font: normal 400 2.5rem "Roboto", sans-serif;
 }
 
 .research-content-body-list {
@@ -38,7 +38,7 @@
 
 .research-content-body-list>li {
   padding: 0.25rem;
-  font: normal 300 1.2rem "Roboto", sans-serif;
+  font: normal 300 1.1rem "Roboto", sans-serif;
 }
 
 .research-content-body-list>li::before {

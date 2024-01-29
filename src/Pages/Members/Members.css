@@ -16,17 +16,17 @@
 
 .sub-heading {
     text-align: center;
-    font: normal 400 3.5rem "Roboto", sans-serif;
+    font: normal 400 2.5rem "Roboto", sans-serif;
     color: #1f4959;
     animation: fadeIn 2s ease-in-out 0s 1 normal both;
 }
 
 .main-title {
-    font: normal 900 6rem "Roboto", sans-serif;
+    font: normal 900 4rem "Roboto", sans-serif;
     text-align: center;
     padding: 0.2em 0 0.2em 0;
     color: #242424;
-    animation: slideInLeft 1s ease-in-out 0s 1 normal both;
+    animation: slideInLeft 800ms ease-in-out 0s 1 normal both;
 }
 
 

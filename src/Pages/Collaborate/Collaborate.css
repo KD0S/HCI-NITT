@@ -13,13 +13,14 @@
 }
 
 .collab-opening-title {
-  font: normal 900 6rem "Roboto", sans-serif;
+  font: normal 900 4rem "Roboto", sans-serif;
   color: #242424;
+  animation: slideInLeft 800ms ease-in-out 0s 1 normal both;
 }
 
 .collab-opening-body {
   text-align: justify;
-  font: normal 300 1.15rem "Roboto", sans-serif;
+  font: normal 300 1.1rem "Roboto", sans-serif;
 }
 
 .collab-opening-body>a {
@@ -40,7 +41,7 @@
 
 .collab-content-list-title {
   color: #1f4959;
-  font: normal 400 3.5rem "Roboto", sans-serif;
+  font: normal 400 2.5rem "Roboto", sans-serif;
 }
 
 .collab-content-list {
@@ -50,7 +51,7 @@
 
 .collab-content-list>li {
   padding: 0.25rem;
-  font: normal 300 1.3rem "Roboto", sans-serif;
+  font: normal 300 1rem "Roboto", sans-serif;
 }
 
 .collab-content-list>li::before {
@@ -79,5 +80,5 @@
 
 .collab-content>p {
   padding: 1rem;
-  font: normal 400 1.3rem "Roboto", sans-serif;
+  font: normal 400 1.1rem "Roboto", sans-serif;
 }

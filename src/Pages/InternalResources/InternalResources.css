@@ -2,17 +2,6 @@
     background-color: #f1f1f2;
 }
 
-.resources-content-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    color: #242424;
-    padding: 1rem;
-    padding-bottom: 0;
-}
-
-
 .resources-content-body {
     padding: 1.5rem 2.5rem;
     padding-top: 0;
@@ -24,7 +13,7 @@
 
 .resources-content-body-list-title {
     color: #1f4959;
-    font: normal 400 3.5rem "Roboto", sans-serif;
+    font: normal 400 2.5rem "Roboto", sans-serif;
 }
 
 .resources-content-body-list {
@@ -34,7 +23,7 @@
 
 .resources-content-body-list>li {
     padding: 0.25rem;
-    font: normal 300 1.2rem "Roboto", sans-serif;
+    font: normal 300 1rem "Roboto", sans-serif;
 }
 
 .resources-content-body-list>li::before {

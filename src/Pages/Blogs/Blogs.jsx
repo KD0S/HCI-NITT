@@ -17,7 +17,7 @@ const Blogs = () => {
                     <div className='iresources-content-body'>
                         <h1 className='main-title'>Blogs</h1>
                         <div className="blogs-container">
-                            <Fade cascade damping={0.3} delay={500}>
+                            <Fade cascade damping={0.5} delay={500}>
                                 <Blog></Blog>
                                 <Blog></Blog>
                                 <Blog></Blog>

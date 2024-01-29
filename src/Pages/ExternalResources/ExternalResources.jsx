@@ -14,7 +14,7 @@ const ExternalResources = () => {
                 {isLoading ? <div className='loader-container'>
                     <div className='loader'></div></div> :
                     <div className="resources-content-body">
-                        <h1 className='main-title'>Internal Resources</h1>
+                        <h1 className='main-title'>External Resources</h1>
                         <div className="resources-content-body-list-container">
                             <h2 className="resources-content-body-list-title">
                                 Relevant Courses
