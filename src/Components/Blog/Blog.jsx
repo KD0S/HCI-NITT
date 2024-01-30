@@ -1,21 +1,33 @@
 import './Blog.css'
+import blogImg from '../../Assets/images/default-blog.png'
+import blogService from '../blogService'
 
-const Blog = () => {
+const Blog = (props) => {
+
+    const data = props.props
+    const handleDelete = () => {
+        blogService.remove(data.id)
+        data.setBlogs(data.blogs.filter(
+            blog => blog.id !== data.id
+        ))
+    }
+
     return (
         <div className='blog'>
-            <div className='img-placeholder'></div>
-            <a href="https://medium.com">
-                <h1 className='blog-title'>Blog Title</h1>
+            <img className='img-placeholder' alt='blog-img'
+                src={data.imgPath ? data.imgPath : blogImg}></img>
+            <a href={data.blogPath}>
+                <h1 className='blog-title'>{data.title}</h1>
+                {data.admin ? <button className='icons-alt' style={{ display: 'inline' }}
+                    onClick={handleDelete}>X</button> : null}
             </a>
-            <p style={{ fontWeight: 500 }}> ABC | Jan 20, 2024</p>
+            <p style={{ fontWeight: 500 }}> {data.author} | {data.date} </p>
             <br />
             <p>
-                This is a blog written by members of HCI. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Odit iure ratione rerum quae animi quis earum error ex dolor, id eveniet maxime,
-                totam tempora dicta doloremque. Tenetur perferendis sapiente suscipit!
+                {data.description}
             </p>
             <br></br>
-            <a href="https://medium.com/">Continue Reading...</a>
+            {data.blogPath ? <a href={data.blogPath}>Continue Reading...</a> : null}
         </div>
     )
 }

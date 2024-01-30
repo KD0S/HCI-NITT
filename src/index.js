@@ -18,6 +18,7 @@ import LatestNewsAdmin from "./Pages/Admin/LatestNews/LatestNews";
 import InternalResources from "./Pages/InternalResources/InternalResources";
 import ExternalResources from "./Pages/ExternalResources/ExternalResources";
 import Blogs from "./Pages/Blogs/Blogs";
+import BlogsAdmin from "./Pages/Admin/Blogs/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/latestNews",
     element: <LatestNewsAdmin></LatestNewsAdmin>,
+  },
+  {
+    path : "/admin/blogs",
+    element: <BlogsAdmin></BlogsAdmin>
   },
   {
     path:"/internal-resources",
