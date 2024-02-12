@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import Footer from '../../Components/Footer/Footer'
-import { Header } from '../../Components/Header/Header'
 import './Publications.css'
 import publicationService from '../../Components/publicationService'
 import Publication from '../../Components/Publication/Publication'
@@ -31,7 +29,6 @@ export const Publications = () => {
 
     return (
         <div className='publications-main-body'>
-            <Header></Header>
             <div>{isLoading ? <div className='loader-container'>
                 <div className='loader'></div></div> : <div>
                 <h1 className='main-title' style={{ padding: '0.4em' }}>Our Publications</h1>
@@ -54,7 +51,6 @@ export const Publications = () => {
                 </div>
             </div>}
             </div>
-            <Footer></Footer>
         </div >
     )
 }

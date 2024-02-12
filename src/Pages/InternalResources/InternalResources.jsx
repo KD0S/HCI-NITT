@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import { Header } from '../../Components/Header/Header'
 import './InternalResources.css'
-import Footer from '../../Components/Footer/Footer'
 
 
 const InternalResources = () => {
@@ -10,7 +8,6 @@ const InternalResources = () => {
 
     return (
         <div className='resources-main'>
-            <Header></Header>
             <div>
                 {isLoading ? <div className='loader-container'>
                     <div className='loader'></div></div> :
@@ -49,7 +46,6 @@ const InternalResources = () => {
                     </div>
                 }
             </div>
-            <Footer></Footer>
         </div>
     )
 }

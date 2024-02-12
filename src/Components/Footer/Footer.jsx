@@ -1,10 +1,10 @@
 import "./Footer.css";
 import { Fade } from "react-awesome-reveal";
 import FooterAddress from "./FooterAddress";
-import logo from '../../Assets/images/HCI-logo-resizedpng.png'
+import logo from "../../Assets/images/HCI-logo-resizedpng.png";
 import FooterQuickLinks from "./FooterQuickLinks";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <Fade triggerOnce>
       <div className="footer-main">
@@ -20,5 +20,3 @@ const Footer = () => {
     </Fade>
   );
 };
-
-export default Footer;

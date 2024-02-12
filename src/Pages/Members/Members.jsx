@@ -1,7 +1,5 @@
 import './Members.css'
-import { Header } from '../../Components/Header/Header'
 import { InfoCard } from '../../Components/InfoCard/InfoCard.jsx'
-import Footer from '../../Components/Footer/Footer.jsx'
 import { useEffect, useState } from 'react'
 import personService from '../../Components/personService.js'
 import { Fade, Flip, Zoom } from 'react-awesome-reveal'
@@ -28,7 +26,6 @@ const Members = () => {
 
     return (
         <div>
-            <Header></Header>
             <div className='members-container'>
                 {isLoading ? <div className='loader-container'><div class="loader"></div></div> :
                     <div>
@@ -70,7 +67,6 @@ const Members = () => {
                     </div>
                 }
             </div>
-            <Footer></Footer>
         </div >
     )
 }

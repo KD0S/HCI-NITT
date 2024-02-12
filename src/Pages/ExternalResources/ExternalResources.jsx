@@ -1,7 +1,5 @@
 import './ExternalResources.css'
-import { Header } from '../../Components/Header/Header'
 import { useState } from 'react'
-import Footer from '../../Components/Footer/Footer'
 
 const ExternalResources = () => {
 
@@ -9,7 +7,6 @@ const ExternalResources = () => {
 
     return (
         <div className='iresources-main-body'>
-            <Header></Header>
             <div>
                 {isLoading ? <div className='loader-container'>
                     <div className='loader'></div></div> :
@@ -48,7 +45,6 @@ const ExternalResources = () => {
                     </div>
                 }
             </div>
-            <Footer></Footer>
         </div>
     )
 }

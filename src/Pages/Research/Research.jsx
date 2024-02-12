@@ -1,13 +1,10 @@
 import "./Research.css";
-import Footer from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
 import { IoIosFlask } from "react-icons/io";
 import { IconContext } from "react-icons";
 
 const Research = () => {
   return (
     <div className="research-main">
-      <Header></Header>
       <div className="research-content-header">
         <h1 className="main-title">WHAT WE DO</h1>
         <IconContext.Provider value={{ className: "research-content-icon" }}>
@@ -46,7 +43,6 @@ const Research = () => {
           </ul>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 };

@@ -1,11 +1,8 @@
-import Footer from "../../Components/Footer/Footer";
-import { Header } from "../../Components/Header/Header";
 import "./Collaborate.css";
 
 const Collaborate = () => {
   return (
     <div>
-      <Header></Header>
       <div className="collab-main-body">
         <div className="collab-opening">
           <h1 className="collab-opening-title">INTERESTED? <strong style={{ fontWeight: 900, color: '#5c7c89' }}>JOIN US</strong></h1>
@@ -108,7 +105,6 @@ const Collaborate = () => {
         </div>
 
       </div>
-      <Footer></Footer>
     </div>
   );
 };

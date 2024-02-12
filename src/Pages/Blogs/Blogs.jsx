@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react"
-import { Header } from "../../Components/Header/Header"
-import Footer from "../../Components/Footer/Footer"
 import Blog from "../../Components/Blog/Blog"
 import './Blogs.css'
 import { Fade } from "react-awesome-reveal"
@@ -22,7 +20,6 @@ const Blogs = () => {
 
     return (
         <div className='iresources-main-body'>
-            <Header></Header>
             <div>
                 {isLoading ? <div className='loader-container'>
                     <div className='loader'></div></div> :
@@ -36,7 +33,6 @@ const Blogs = () => {
                     </div>
                 }
             </div>
-            <Footer></Footer>
         </div>
     )
 }
