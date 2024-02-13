@@ -1,7 +1,7 @@
-import { IconContext } from "react-icons";
-import { IoIosArrowDropdown } from "react-icons/io";
-import { NavLink } from "react-router-dom";
 import "./Header.css";
+
+import { HeaderDropdown } from "./HeaderDropdown/HeaderDropdown";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -30,54 +30,53 @@ export const Header = () => {
         >
           Members
         </NavLink>
-        <div className="heading-dropdown-main">
-          <p className="heading-dropdown-trigger">Our Work</p>
-          <IconContext.Provider value={{ className: "heading-dropdown-icon" }}>
-            <IoIosArrowDropdown />
-          </IconContext.Provider>
-          <ul className="heading-dropdown-content">
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/research">Research</NavLink>
-            </li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/publications">Publications</NavLink>
-            </li>
-          </ul>
-        </div>
-        <div className="heading-dropdown-main">
-          <p className="heading-dropdown-trigger">Resources</p>
-          <IconContext.Provider value={{ className: "heading-dropdown-icon" }}>
-            <IoIosArrowDropdown />
-          </IconContext.Provider>
-          <ul className="heading-dropdown-content">
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/blogs">Blogs</NavLink>
-            </li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/internal-resources">Internal Resources</NavLink>
-            </li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/external-resources">External Resources</NavLink>
-            </li>
-          </ul>
-        </div>
-        <div className="heading-dropdown-main">
-          <p className="heading-dropdown-trigger">Let's Connect</p>
-          <IconContext.Provider value={{ className: "heading-dropdown-icon" }}>
-            <IoIosArrowDropdown />
-          </IconContext.Provider>
-          <ul className="heading-dropdown-content">
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/collaborate">Collaborate</NavLink>
-            </li>
-            <li>
-              <NavLink className={({ isActive }) => (isActive) ? "active" : ""} to="/contact">Contact Us</NavLink>
-            </li>
-          </ul>
-        </div>
+        <HeaderDropdown
+          dropdownTitle="Our work"
+          dropdownContent={[
+            {
+              name: "Research",
+              route: "/research",
+            },
+            {
+              name: "Projects",
+              route: "/projects",
+            },
+            {
+              name: "Publications",
+              route: "/publications",
+            },
+          ]}
+        />
+        <HeaderDropdown
+          dropdownTitle="Resources"
+          dropdownContent={[
+            {
+              name: "Blogs",
+              route: "/blogs",
+            },
+            {
+              name: "Internal Resources",
+              route: "/internal-resources",
+            },
+            {
+              name: "External Resources",
+              route: "/external-resources",
+            },
+          ]}
+        />
+        <HeaderDropdown
+          dropdownTitle="Let's connect"
+          dropdownContent={[
+            {
+              name: "Collaborate",
+              route: "/collaborate",
+            },
+            {
+              name: "Contact Us",
+              route: "/contact",
+            },
+          ]}
+        />
       </div>
     </div>
   );
