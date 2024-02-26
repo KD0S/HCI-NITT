@@ -8,7 +8,7 @@
 }
 
 .app-title {
-  color: #f1f1f2;
+  color: var(--color-white);
   margin-left: 2.5rem;
   font: normal 900 2rem "Roboto", sans-serif;
 }
@@ -22,19 +22,70 @@
 }
 
 .headings a {
-  color: #f1f1f2;
+  color: var(--color-white);
   text-decoration: none;
   font: normal 500 1.1rem "Roboto", sans-serif;
 }
 
 .headings a:hover {
-  color: #00bbd6;
+  color: var(--color-light-blue);
   transition: 250ms ease-in-out;
 }
 
 .headings .active {
   scale: 1.2;
   font-weight: 700;
-  color: #00bbd6;
+  color: var(--color-light-blue);
   transition: 300ms ease-in-out;
+}
+
+.header-menu-btn {
+  display: none;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* three lines of hamburger menu */
+.top-line,
+.middle-line,
+.bottom-line {
+  width: 40px;
+  height: 5px;
+  background: var(--color-white);
+  border-radius: 16px;
+  transform-origin: right;
+  transition: transform 0.3s, visibility 0.01s;
+  position: relative;
+  z-index: 5;
+}
+
+.top-line-menu-open {
+  transform-origin: right;
+  transform: rotate(-35deg);
+}
+
+.top-line-menu-close {
+  transform-origin: right;
+  transform: rotate(35deg);
+}
+
+.middle-line-menu-open {
+  visibility: hidden;
+}
+
+.bottom-line-menu-open {
+  transform-origin: right;
+  transform: rotate(35deg);
+}
+
+@media (max-width: 1000px) {
+  .headings {
+    display: none;
+  }
+
+  .header-menu-btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+  }
 }

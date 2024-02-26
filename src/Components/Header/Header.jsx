@@ -1,9 +1,13 @@
 import "./Header.css";
 
+import { useState } from "react";
 import { HeaderDropdown } from "./HeaderDropdown/HeaderDropdown";
 import { NavLink } from "react-router-dom";
+import HeaderMenuMobile from "./HeaderMenuMobile/HeaderMenuMobile";
 
 export const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="header-main">
       <NavLink
@@ -78,6 +82,22 @@ export const Header = () => {
           ]}
         />
       </div>
+      <div className="header-menu-btn" onClick={() => setMenuOpen(!isMenuOpen)}>
+        <div
+          className={!isMenuOpen ? "top-line" : "top-line top-line-menu-open"}
+        ></div>
+        <div
+          className={
+            !isMenuOpen ? "middle-line" : "middle-line middle-line-menu-open"
+          }
+        ></div>
+        <div
+          className={
+            !isMenuOpen ? "bottom-line" : "bottom-line bottom-line-menu-open"
+          }
+        ></div>
+      </div>
+      <HeaderMenuMobile isMenuOpen={isMenuOpen} setMenuOpen={setMenuOpen} />
     </div>
   );
 };

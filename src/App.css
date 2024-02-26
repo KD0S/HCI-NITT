@@ -19,3 +19,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* declaring all variables */
+:root {
+  --color-dark-blue: #011425;
+  --color-light-blue: #00bbd6;
+  --color-white: #f1f1f2;
+}
