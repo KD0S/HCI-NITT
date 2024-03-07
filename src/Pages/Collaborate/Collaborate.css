@@ -1,38 +1,32 @@
-.collab-main-body {
-  animation: fadeIn 0.5s ease-in 0s 1 normal both;
-}
-
 .collab-opening {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 3rem 10vw;
   gap: 1rem;
-  background-color: #1f4959;
-  color: white;
+  background-color: var(--color-green);
+  color: var(--color-white);
 }
 
 .collab-opening-title {
-  font: normal 900 4rem "Roboto", sans-serif;
-  color: #242424;
+  font: normal 900 clamp(2.3rem, calc(2.6vw + 2.6vh), 5rem) "Roboto", sans-serif;
+  color: var(--color-grey);
   animation: slideInLeft 800ms ease-in-out 0s 1 normal both;
 }
 
 .collab-opening-body {
   text-align: justify;
-  font: normal 300 1.1rem "Roboto", sans-serif;
+  font: normal 300 clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem) "Roboto",
+    sans-serif;
+  animation: slideInLeft 800ms ease-in-out 0s 1 normal both;
 }
 
-.collab-opening-body>a {
-  text-decoration: none;
-}
-
-.collab-opening-body>a:hover {
-  color: lightskyblue;
+.collab-opening-body a:hover {
+  color: var(--color-light-blue);
 }
 
 .collab-content {
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 2.5vw;
 }
 
 .collab-content-list-container {
@@ -40,8 +34,8 @@
 }
 
 .collab-content-list-title {
-  color: #1f4959;
-  font: normal 400 2.5rem "Roboto", sans-serif;
+  color: var(--color-green);
+  font: normal 400 clamp(2rem, calc(1.7vw + 1.7vh), 4rem) "Roboto", sans-serif;
 }
 
 .collab-content-list {
@@ -49,36 +43,37 @@
   list-style: none;
 }
 
-.collab-content-list>li {
-  padding: 0.25rem;
-  font: normal 300 1rem "Roboto", sans-serif;
+.collab-content-list li {
+  padding: 0.3rem;
+  font: normal 300 clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem) "Roboto",
+    sans-serif;
 }
 
-.collab-content-list>li::before {
+.collab-content-list li::before {
   content: "";
-  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  background: #011455;
+  background: var(--color-green);
   display: inline-block;
-  /* Needed to add space between the bullet and the text */
+  /* Needed to add space between the bullet and the 
+  text. Also needed for space (tweak if needed) */
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 100%;
   margin-right: 0.6rem;
-  /* Also needed for space (tweak if needed) */
 }
 
 .collab-content-list a {
-  color: #1f4959;
+  color: var(--color-green);
   font-weight: 400;
-  text-decoration: none;
 }
 
 .collab-content-list a:hover {
-  color: #012153;
+  color: var(--color-dark-blue);
   transition: color 200ms ease-in-out;
 }
 
-.collab-content>p {
+/* Last line in collab content */
+.collab-content > p {
   padding: 1rem;
-  font: normal 400 1.1rem "Roboto", sans-serif;
+  font: normal 400 clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem) "Roboto",
+    sans-serif;
 }

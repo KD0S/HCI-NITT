@@ -5,14 +5,19 @@ const Collaborate = () => {
     <div>
       <div className="collab-main-body">
         <div className="collab-opening">
-          <h1 className="collab-opening-title">INTERESTED? <strong style={{ fontWeight: 900, color: '#5c7c89' }}>JOIN US</strong></h1>
+          <h1 className="collab-opening-title">
+            INTERESTED?{" "}
+            <strong style={{ fontWeight: 900, color: "#5c7c89" }}>
+              JOIN US
+            </strong>
+          </h1>
           <p className="collab-opening-body">
-            The HCI@NITT lab is always looking for researchers at UG, PG, RA, and
-            Ph.D. levels. Please see below to check the list of currently open
-            positions and follow us on social media to know about the latest
-            openings. If you do not see any suitable openings and have an exciting
-            idea related to our research interests, please send an SOP (2-3 pages)
-            and latest CV with subject as
+            The HCI@NITT lab is always looking for researchers at UG, PG, RA,
+            and Ph.D. levels. Please see below to check the list of currently
+            open positions and follow us on social media to know about the
+            latest openings. If you do not see any suitable openings and have an
+            exciting idea related to our research interests, please send an SOP
+            (2-3 pages) and latest CV with subject as
             <strong>
               {" "}
               “Application for Intern/RA/Ph.D. in [mention your research
@@ -50,14 +55,14 @@ const Collaborate = () => {
                 directions.
               </li>
               <li>
-                You are passionate about empowering technology to improve people’s
-                quality of life.
+                You are passionate about empowering technology to improve
+                people’s quality of life.
               </li>
               <li>
-                You should have completed at least 3 years of university education
-                for UG applicants, UG degree for PG applicants, and PG degree for
-                Ph.D. applicants. However, it can be waived for candidates with
-                exceptional profiles.
+                You should have completed at least 3 years of university
+                education for UG applicants, UG degree for PG applicants, and PG
+                degree for Ph.D. applicants. However, it can be waived for
+                candidates with exceptional profiles.
               </li>
               <li>
                 You have a strong background (or strong interest) and dedicated
@@ -73,16 +78,16 @@ const Collaborate = () => {
             </h2>
             <ul className="collab-content-list">
               <li>
-                You will receive a unique opportunity to learn and grow under the
-                competent supervision of{" "}
+                You will receive a unique opportunity to learn and grow under
+                the competent supervision of{" "}
                 <a href="https://www.nitt.edu/home/academics/departments/cse/faculty/sameedha/">
                   <strong>Dr. B Shameedha Begum</strong>
                 </a>{" "}
                 and her collaborators.
               </li>
               <li>
-                You will be able to work with and learn from people with physical
-                and/or mental health challenges.
+                You will be able to work with and learn from people with
+                physical and/or mental health challenges.
               </li>
               <li>
                 You will have a friendly atmosphere with skilled and congenial
@@ -103,7 +108,6 @@ const Collaborate = () => {
             applicants with disabilities if found equally competent.{" "}
           </p>
         </div>
-
       </div>
     </div>
   );
