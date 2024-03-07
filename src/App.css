@@ -20,9 +20,18 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* declaring all variables */
 :root {
   --color-dark-blue: #011425;
-  --color-light-blue: #00bbd6;
+  --color-green: #1f4959;
+  --color-grey: #242424;
+  --color-light-blue: lightskyblue;
   --color-white: #f1f1f2;
+
+  --font-size-title: 4rem;
+  --font-size-para: 1.1rem; 
 }

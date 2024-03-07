@@ -7,7 +7,7 @@ import { IoCall } from "react-icons/io5";
 const FooterAddress = () => {
   return (
     /* this className is used in Footer.css for styling */
-    <div className="footer-item">
+    <div className="footer-item footer-address">
       <h2 className="footer-item-title">Address</h2>
       <div className="footer-address-detail">
         <IconContext.Provider value={{ className: "footer-address-icon" }}>

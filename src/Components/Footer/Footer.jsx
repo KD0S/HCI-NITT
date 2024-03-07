@@ -11,8 +11,8 @@ export const Footer = () => {
         <div className="footer-items">
           <FooterAddress />
           <FooterQuickLinks />
-          <div className="footer-item">
-            <img src={logo} className="logo" alt="logo" width={200} />
+          <div className="footer-item footer-logo">
+            <img src={logo} className="logo" alt="logo" />
           </div>
         </div>
         <div className="footer-tag">© HCI@NITT, All Rights Reserved.</div>
