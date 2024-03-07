@@ -1,8 +1,9 @@
 import "./ContactDetails.css";
-import { IconContext } from "react-icons";
+
 import { FaMapLocationDot } from "react-icons/fa6";
-import { SiGmail } from "react-icons/si";
+import { IconContext } from "react-icons";
 import { IoCall } from "react-icons/io5";
+import { SiGmail } from "react-icons/si";
 
 const ContactDetails = () => {
   return (

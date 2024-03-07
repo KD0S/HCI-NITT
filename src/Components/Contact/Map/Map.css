@@ -1,1 +1,13 @@
+.map {
+  border: none;
+  width: 50%;
+  height: 35rem;
+  padding: 2rem;
+}
 
+@media (max-width: 960px) {
+  .map {
+    width: 90%;
+    padding: 2rem 0rem;
+  }
+}

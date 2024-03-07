@@ -1,8 +1,15 @@
 .form-map-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contact-main-body {
   animation: fadeIn 0.5s ease-in 0s 1 normal both;
+}
+
+@media (max-width: 960px) {
+  .form-map-container {
+    flex-direction: column;
+  }
 }

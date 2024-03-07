@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 10rem;
+  padding: 3rem 10vw;
   gap: 1rem;
-  background-color: #1f4959;
-  color: white;
+  background-color: var(--color-green);
+  color: var(--color-white);
 }
 
 .contact-opening-title {
-  font: normal 900 4rem "Roboto", sans-serif;
-  color: #242424;
+  font: normal 900 clamp(2.3rem, calc(2.6vw + 2.6vh), 5rem) "Roboto", sans-serif;
+  color: var(--color-grey);
   animation: slideInLeft 800ms ease-in-out 0s 1 normal both;
 }
 
@@ -26,24 +26,32 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-  font: normal 300 1.1rem "Roboto", sans-serif;
+  font: normal 300 clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem) "Roboto",
+    sans-serif;
 }
 
 .contact-detail-icon {
-  font-size: 6rem;
-  padding: 1.3rem;
+  font-size: clamp(3.8rem, calc(4vw + 4vh), 7rem);
+  padding: clamp(0.7rem, calc(0.6vw + 0.6vh), 2rem);
   border-radius: 100%;
-  background: linear-gradient(145deg, #242424, #1f4959);
+  background: linear-gradient(145deg, var(--color-grey), var(--color-green));
   box-shadow: 10px 10px 20px #5c7c89, -10px -10px 20px #5c7c89;
 }
 
 .contact-detail-text {
   text-align: center;
-  color: #92d8e7;
+  color: var(--color-light-blue);
 }
-
 
 .contact-opening-body {
   text-align: justify;
-  font: normal 300 1rem "Roboto", sans-serif;
+  font: normal 300 clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem) "Roboto",
+    sans-serif;
+}
+
+@media (max-width: 600px) {
+  .contact-details-container {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
 }
