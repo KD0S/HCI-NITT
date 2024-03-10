@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kanit:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
 * {
   margin: 0px;
@@ -32,6 +33,6 @@ a {
   --color-light-blue: lightskyblue;
   --color-white: #f1f1f2;
 
-  --font-size-title: 4rem;
-  --font-size-para: 1.1rem; 
+  --responsive-font-size-title: clamp(2.3rem, calc(2.6vw + 2.6vh), 5rem);
+  --responsive-font-size-para: clamp(0.95rem, calc(0.7vw + 0.7vh), 2rem); 
 }

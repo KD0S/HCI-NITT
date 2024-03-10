@@ -1,6 +1,8 @@
 import "./AboutUs.css";
-import { imgSlides } from "../Carousel/ImgSlides";
+
 import { Bounce, Slide } from "react-awesome-reveal";
+
+import { imgSlides } from "../Carousel/ImgSlides";
 
 const AboutUs = () => {
   return (
@@ -33,7 +35,7 @@ const AboutUs = () => {
             <strong>human emotions</strong>,{" "}
             <strong>emotional intelligence</strong>,{" "}
             <strong>cognitive load</strong>, <strong>imagined speech</strong>{" "}
-            and <strong>motor imagery using brain signals (BCI) </strong>.
+            and <strong>motor imagery using brain signals (BCI)</strong>.
             <br />
             <br />
             Our research involves the processing of brain signals acquired

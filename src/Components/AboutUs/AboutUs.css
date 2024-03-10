@@ -1,33 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
-
 .about-main {
-  padding: 0rem 8rem;
+  padding: 4rem 8vw;
   display: flex;
-  gap: 8rem;
-  height: 100vh;
-  background-color: #242424;
+  gap: 8vw;
+  background-color: var(--color-grey);
 }
 
 .about-img-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 4rem;
 }
 
+/* img-container determines image's 
+size, acts as a restrainer */
 .about-img-container {
   object-fit: cover;
-  border: 0.75rem solid white;
+  width: calc(220px + 8vw);
 }
 
-.about-img-container>img {
+.about-img-container > img {
+  display: inline-block;
   width: 100%;
-  height: 100%;
+  border: 0.5rem solid var(--color-white);
 }
 
 .about-content {
   display: flex;
-  color: #f1f1f2;
+  color: var(--color-white);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -35,27 +34,56 @@
 }
 
 .about-content-title {
-  font: normal 900 4rem "Roboto", sans-serif;
+  font: normal 900 var(--responsive-font-size-title) "Roboto", sans-serif;
   color: #5c7c89;
-  width: 100%;
 }
 
 .about-content-body {
   text-align: justify;
-  font: normal 300 1rem "Roboto", sans-serif;
+  font: normal 300 var(--responsive-font-size-para) "Roboto", sans-serif;
 }
 
-.about-content-body>strong {
-  color: #92d8e7;
+.about-content-body > strong {
+  color: var(--color-light-blue);
   font-weight: 500;
 }
 
-.about-content-body>a {
-  text-decoration: none;
-}
-
-.about-content-body>a:hover {
+.about-content-body > a:hover {
   color: #5c7c89;
   scale: 1.1;
   transition: 200ms ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .about-main {
+    padding: 2rem 6vw;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .about-img-column {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: calc(1.5rem + 1vw);
+  }
+
+  .about-img-container {
+    width: calc(240px + 8vw);
+  }
+}
+
+@media (max-width: 700px) {
+  .about-img-column {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .about-img-container {
+    width: calc(200px + 20vw);
+  }
+
+  .about-img-container > img {
+    border: 0.25rem solid var(--color-white);
+  }
 }
